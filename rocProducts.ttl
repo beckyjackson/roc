@@ -1,0 +1,813 @@
+@prefix rp:         <http://www.ninepts.com/rocProducts#> .
+@prefix rc:         <http://www.ninepts.com/rocCompanies#> .
+@prefix roc:        <http://www.ninepts.com/roc#> .
+@prefix gr:         <http://purl.org/goodrelations/v1#> .
+@prefix owl:        <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:       <https://www.w3.org/TR/skos-reference/#> .
+
+<http://www.ninepts.com/rocProducts>
+    rdf:type                    owl:Ontology ;
+    owl:versionInfo             "1.0" ;
+    owl:imports                 <http://www.ninepts.com/rocCompanies> . 
+
+
+# ===================================================================
+# Product Models
+# ===================================================================
+
+# Belay Devices
+
+<http://www.ninepts.com/RocProducts#BlackDiamondATC>
+    rdf:type                    owl:NamedIndividual, roc:TubularDevice, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond ATC"@en ;
+    gr:description              "Built to handle ropes ranging in diameter from 7.7mm to 11mm, this simple but functional device handles belaying and rappelling with kink-free ease."@en;
+    gr:color                    "denim"@en, "ruby"@en, "platinum"@en ;
+    gr:hasBrand                 rc:BlackDiamond ;
+    gr:hasPriceSpecification    [
+                                    rdf:type                gr:UnitPriceSpecification ;
+                                    gr:hasCurrency          "USD"^^xsd:string ;
+                                    gr:hasCurrencyValue     "17.95"^^xsd:float
+                                ] ;
+    gr:weight                   [
+                                    rdf:type                   gr:QuantitativeValue ;
+                                    gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                    gr:hasValue                "60"^^xsd:float 
+                                ] ;
+    roc:uiaaApproved          true .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondATCGuide>
+    rdf:type                    owl:NamedIndividual, roc:TubularDevice, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond ATC Guide"@en ;
+    gr:description              "The ATC Guide allows for a standard belay as well as belaying one or two climbers off anchors. Black Diamond upgraded it with machined windows for a lighter weight, and the larger auto-block release accepts smaller carabiners for a smoother and more dependable operation."@en;
+    gr:color                    "black"@en, "green"@en ;
+    gr:hasBrand                 rc:BlackDiamond ;
+    gr:hasPriceSpecification    [
+                                    rdf:type                gr:UnitPriceSpecification ;
+                                    gr:hasCurrency          "USD"^^xsd:string ;
+                                    gr:hasCurrencyValue     "29.95"^^xsd:float 
+                                ] ;
+    gr:weight                   [
+                                    rdf:type                   gr:QuantitativeValue ;
+                                    gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                    gr:hasValue                "87.9"^^xsd:float 
+                                ] ;
+    roc:uiaaApproved          true .
+
+<http://www.ninepts.com/RocProducts#PetzlGriGri2>
+    rdf:type                    owl:NamedIndividual, roc:AutoBrakingDevice, gr:ProductOrServiceModel ;
+    gr:name                     "Petzl GRIGRI 2"@en ;
+    gr:description              "The compact and lightweight GRIGRI 2 Belay Device with assisted braking delivers excellent control for top-rope climbing and lead climbing."@en;
+    gr:color                    "grey"@en, "turquoise"@en, "yellow"@en ;
+    gr:hasBrand                 rc:Petzl ;
+    gr:hasPriceSpecification    [
+                                    rdf:type                gr:UnitPriceSpecification ;
+                                    gr:hasCurrency          "USD"^^xsd:string ;
+                                    gr:hasCurrencyValue     "99.95"^^xsd:float 
+                                ] ;
+    gr:weight                   [
+                                    rdf:type                   gr:QuantitativeValue ;
+                                    gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                    gr:hasValue                "170"^^xsd:float 
+                                ] ;
+    roc:uiaaApproved          true .
+
+<http://www.ninepts.com/RocProducts#PetzlVerso>
+    rdf:type                    owl:NamedIndividual, roc:TubularDevice, gr:ProductOrServiceModel ;
+    gr:name                     "Petzl Verso"@en ;
+    gr:description              "Petzl's lightest belay/rappel device with Adaptive Rope Control technology."@en;
+
+    gr:color                    "blue"@en, "titanium"@en, "red"@en ;
+    gr:hasBrand                 rc:Petzl ;
+    gr:hasPriceSpecification    [
+                                    rdf:type                gr:UnitPriceSpecification ;
+                                    gr:hasCurrency          "USD"^^xsd:string ;
+                                    gr:hasCurrencyValue     "21.95"^^xsd:float 
+                                ] ;
+    gr:weight                   [
+                                    rdf:type                   gr:QuantitativeValue ;
+                                    gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                    gr:hasValue                "56.7"^^xsd:float 
+                                ] ;
+    roc:uiaaApproved          true .
+
+
+# Carabiners
+
+
+# Consumable
+
+
+# Crash Pads
+
+
+# Harnesses
+
+<http://www.ninepts.com/RocProducts#EdelridJayneIIClimbingHarness-XS>
+    rdf:type                    owl:NamedIndividual, roc:Harness, gr:ProductOrServiceModel ;
+    gr:name                     "Edelrid Jayne II Climbing Harness - XS"@en ;
+    gr:description              "A great all-arounder, this women's harness lets you spend the summer trad climbing, and take on weekend mountaineering adventures or ice climbing."@en;
+    gr:color                    "oasis/icemint" ;
+    gr:hasBrand                 rc:Edelrid ;
+    gr:hasPriceSpecification    [
+                                    rdf:type                gr:UnitPriceSpecification ;
+                                    gr:hasCurrency          "USD"^^xsd:string ;
+                                    gr:hasCurrencyValue     "59.95"^^xsd:float 
+                                ] ;
+    gr:weight                   [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "392"^^xsd:float 
+                                ] ;
+    roc:designedFor           roc:Women ;
+    roc:hasSize               roc:XS ;
+    roc:uiaaApproved          true .
+
+<http://www.ninepts.com/RocProducts#EdelridJayneIIClimbingHarness-S>
+    rdf:type                    owl:NamedIndividual, roc:Harness, gr:ProductOrServiceModel ;
+    gr:name                     "Edelrid Jayne II Climbing Harness - S"@en ;
+    gr:description              "A great all-arounder, this women's harness lets you spend the summer trad climbing, and take on weekend mountaineering adventures or ice climbing."@en;
+    gr:color                    "oasis/icemint" ;
+    gr:hasBrand                 rc:Edelrid ;
+    gr:hasPriceSpecification    [
+                                    rdf:type                gr:UnitPriceSpecification ;
+                                    gr:hasCurrency          "USD"^^xsd:string ;
+                                    gr:hasCurrencyValue     "59.95"^^xsd:float 
+                                ] ;
+    gr:weight                   [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "411"^^xsd:float 
+                                ] ;
+    roc:designedFor           roc:Women ;
+    roc:hasSize               roc:S ;
+    roc:uiaaApproved          true .
+
+<http://www.ninepts.com/RocProducts#EdelridJayneIIClimbingHarness-M>
+    rdf:type                    owl:NamedIndividual, roc:Harness, gr:ProductOrServiceModel ;
+    gr:name                     "Edelrid Jayne II Climbing Harness - M"@en ;
+    gr:description              "A great all-arounder, this women's harness lets you spend the summer trad climbing, and take on weekend mountaineering adventures or ice climbing."@en;
+    gr:color                    "oasis/icemint" ;
+    gr:hasBrand                 rc:Edelrid ;
+    gr:hasPriceSpecification    [
+                                    rdf:type                gr:UnitPriceSpecification ;
+                                    gr:hasCurrency          "USD"^^xsd:string ;
+                                    gr:hasCurrencyValue     "59.95"^^xsd:float 
+                                ] ;
+    gr:weight                   [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "447"^^xsd:float 
+                                ] ;
+    roc:designedFor           roc:Women ;
+    roc:hasSize               roc:M ;
+    roc:uiaaApproved          true .
+
+<http://www.ninepts.com/RocProducts#EdelridJayneIIClimbingHarness-L>
+    rdf:type                    owl:NamedIndividual, roc:Harness, gr:ProductOrServiceModel ;
+    gr:name                     "Edelrid Jayne II Climbing Harness - L"@en ;
+    gr:description              "A great all-arounder, this women's harness lets you spend the summer trad climbing, and take on weekend mountaineering adventures or ice climbing."@en;
+    gr:color                    "oasis/icemint" ;
+    gr:hasBrand                 rc:Edelrid ;
+    gr:hasPriceSpecification    [
+                                    rdf:type                gr:UnitPriceSpecification ;
+                                    gr:hasCurrency          "USD"^^xsd:string ;
+                                    gr:hasCurrencyValue     "59.95"^^xsd:float 
+                                ] ;
+    gr:weight                   [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "465"^^xsd:float 
+                                ] ;
+    roc:designedFor           roc:Women ;
+    roc:hasSize               roc:L ;
+    roc:uiaaApproved          true .
+
+
+# Other ======================================= CONTINUE FIXING HERE ===========================
+
+<http://www.ninepts.com/RocProducts#MetoliusPas22PersonalAnchorSystem>
+    rdf:type                    owl:NamedIndividual, roc:PersonalAnchorSystem, gr:ProductOrServiceModel ;
+    gr:name                     "Metolius PAS 22 Personal Anchor System"@en ;
+    skos:altLabel				"Metolius PAS"@en ;
+    gr:description              "The Metolius PAS 22™ personal anchor system makes it easy to connect to an anchor whether you're cleaning gear on a top rope climb or getting ready to belay a second up a multipitch route."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			true ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "11"^^xsd:float 
+                                ] ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "93.6"^^xsd:float 
+                                ] ;
+    gr:color                    "multi" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         32.95 ;
+    gr:hasBrand                 rc:Metolius .
+
+<http://www.ninepts.com/RocProducts#MetoliusAdjustableGearSling>
+    rdf:type                    owl:NamedIndividual, roc:MiscWorn, gr:ProductOrServiceModel ;
+    gr:name                     "Metolius Adjustable Gear Sling"@en ;
+    gr:description              "Long multi-pitch routes often require more racking options than the four loops on your harness. Distribute the weight and stay organized and comfortable with the Metolius Adjustable Gear Sling. "@en;
+    roc:uiaaApproved          false ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "119.1"^^xsd:float 
+                                ] ;
+    gr:color                    "pewter" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         23.95 ;
+    gr:hasBrand                 rc:Metolius .
+
+# Protection
+
+<http://www.ninepts.com/RocProducts#BlackDiamondCamalotC3MicroCam0>
+    rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Camalot C3 Micro Cam, #0"@en ;
+    gr:description              "The new Camalot C3s are designed to offer protection in truly thin areas. With 30% narrower head widths than any other three- or four-cam units on the market, they'll fit in small pin scars, finger pockets, and blown out holes."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "59"^^xsd:float 
+                                ] ;
+    gr:color                    "green" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         64.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondCamalotC3MicroCam1>
+    rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Camalot C3 Micro Cam, #1"@en ;
+    gr:description              "The new Camalot C3s are designed to offer protection in truly thin areas. With 30% narrower head widths than any other three- or four-cam units on the market, they'll fit in small pin scars, finger pockets, and blown out holes."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "63"^^xsd:float 
+                                ] ;
+    gr:color                    "red" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         64.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondCamalotC3MicroCam2>
+    rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Camalot C3 Micro Cam, #2"@en ;
+    gr:description              "The new Camalot C3s are designed to offer protection in truly thin areas. With 30% narrower head widths than any other three- or four-cam units on the market, they'll fit in small pin scars, finger pockets, and blown out holes."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "66"^^xsd:float 
+                                ] ;
+    gr:color                    "yellow" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         64.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondCamalotC4CamPoint4>
+    rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 0.4"@en ;
+    gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "83"^^xsd:float 
+                                ] ;
+    gr:color                    "gray" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         64.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondCamalotC4CamPoint5>
+    rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 0.5"@en ;
+    gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "99"^^xsd:float 
+                                ] ;
+    gr:color                    "purple" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         64.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondCamalotC4CamPoint75>
+    rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 0.75"@en ;
+    gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "119"^^xsd:float 
+                                ] ;
+    gr:color                    "green" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         64.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondCamalotC4Cam1>
+    rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 1"@en ;
+    gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "136"^^xsd:float 
+                                ] ;
+    gr:color                    "red" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         69.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondCamalotC4Cam2>
+    rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 2"@en ;
+    gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "155"^^xsd:float 
+                                ] ;
+    gr:color                    "yellow" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         74.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondCamalotC4Cam3>
+    rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 3"@en ;
+    gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "201"^^xsd:float 
+                                ] ;
+    gr:color                    "blue" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         74.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondStopperSet1to13>
+    rdf:type                    owl:NamedIndividual, roc:PassiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Stopper Set 1-13"@en ;
+    gr:description              "Black Diamond Stoppers are an essential for every trad rack, designed with a transverse taper that permits sideways placements in flares and shallow seams. Anodized by size, they`re quickly identifiable and rounded edges make for easy removal. Each Stopper is equipped with a durable, galvanized steel cable."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "460"^^xsd:float 
+                                ] ;
+    gr:color                    "multi" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         114.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#CampUsaTriCamPoint25>
+    rdf:type                    owl:NamedIndividual, roc:PassiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "C.A.M.P. USA Tri-Cam 0.25"@en ;
+    gr:description              "These wondrous pieces of pro can be used either as cams or nuts and often work where nothing else fi ts. Tricams are ideal in horizontal cracks, pockets, and shallow vertical cracks."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "19.8"^^xsd:float 
+                                ] ;
+    gr:color                    "black" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         23.95 ;
+    gr:hasBrand                 rc:Camp .
+
+<http://www.ninepts.com/RocProducts#CampUsaTriCamPoint5>
+    rdf:type                    owl:NamedIndividual, roc:PassiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "C.A.M.P. USA Tri-Cam 0.5"@en ;
+    gr:description              "These wondrous pieces of pro can be used either as cams or nuts and often work where nothing else fi ts. Tricams are ideal in horizontal cracks, pockets, and shallow vertical cracks."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "25.5"^^xsd:float 
+                                ] ;
+    gr:color                    "pink" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         23.95 ;
+    gr:hasBrand                 rc:Camp .
+
+<http://www.ninepts.com/RocProducts#CampUsaTriCam1>
+    rdf:type                    owl:NamedIndividual, roc:PassiveProtection, gr:ProductOrServiceModel ;
+    gr:name                     "C.A.M.P. USA Tri-Cam 1"@en ;
+    gr:description              "These wondrous pieces of pro can be used either as cams or nuts and often work where nothing else fi ts. Tricams are ideal in horizontal cracks, pockets, and shallow vertical cracks."@en;
+    roc:uiaaApproved          true ;
+    gr:weight 				    [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "34"^^xsd:float 
+                                ] ;
+    gr:color                    "red" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         23.95 ;
+    gr:hasBrand                 rc:Camp .
+
+
+# Ropes
+
+<http://www.ninepts.com/RocProducts#MammutInfinityProtectSingleRope>
+    rdf:type                    owl:NamedIndividual, roc:Rope, gr:ProductOrServiceModel ;
+    gr:name                     "Mammut Infinity Protect Single Rope"@en ;
+    gr:description              "The Mammut Infinity Protect 9.5mm x 70m Single Rope balances small diameter, low weight and high performance for sport climbing and multipitch trad routes."@en;
+    roc:uiaaApproved          true ;
+    gr:width                    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "9.5"^^xsd:float 
+                                ] ;
+    gr:height                   [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MTR"^^xsd:string ;
+                                 gr:hasValueFloat           "70"^^xsd:float 
+                                ] ;
+    gr:color                    "ocean" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         229.95 ;
+    gr:hasBrand                 rc:Mammut .
+
+<http://www.ninepts.com/RocProducts#SterlingEvoltuionVelocity60m>
+    rdf:type                    owl:NamedIndividual, roc:Rope, gr:ProductOrServiceModel ;
+    gr:name                     "Sterling Evolution Velocity 60M"@en ;
+    gr:description              "This rope has it all and is our most popular of the Evolution series. Just the right amount of stiffness, so your rope doesn't flop during critical clips and its silky smooth sheath withstands abrasion and slides effortlessly to reduce rope drag."@en;
+    roc:uiaaApproved          true ;
+    gr:width                    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "9.8"^^xsd:float 
+                                ] ;
+    gr:height                   [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MTR"^^xsd:string ;
+                                 gr:hasValueFloat           "60"^^xsd:float 
+                                ] ;
+    gr:color                    "ice blue", "turquoise", "neon green", "purple" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         204.00 ;
+    gr:hasBrand                 rc:Sterling .
+
+<http://www.ninepts.com/RocProducts#SterlingEvoltuionVelocity70m>
+    rdf:type                    owl:NamedIndividual, roc:Rope, gr:ProductOrServiceModel ;
+    gr:name                     "Sterling Evolution Velocity 70M"@en ;
+    gr:description              "This rope has it all and is our most popular of the Evolution series. Just the right amount of stiffness, so your rope doesn't flop during critical clips and its silky smooth sheath withstands abrasion and slides effortlessly to reduce rope drag."@en;
+    roc:uiaaApproved          true ;
+    gr:width                    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "9.8"^^xsd:float 
+                                ] ;
+    gr:height                   [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MTR"^^xsd:string ;
+                                 gr:hasValueFloat           "70"^^xsd:float 
+                                ] ;
+    gr:color                    "ice blue", "turquoise", "neon green", "purple" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         238.05 ;
+    gr:hasBrand                 rc:Sterling .
+
+
+# Runners
+
+<http://www.ninepts.com/RocProducts#BlackDiamondNylonRunner30>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Nylon 18mm x 30cm Runner"@en ;
+    gr:description              "Versatile sewn runners for building anchors, slinging natural features and extending placements on wandering routes, Black Diamond Nylon Runners offer durable and classic functionality. Each size is also color-coded for quick and easy identification on your harness."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			false ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "18"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "CMT"^^xsd:string ;
+                                 gr:hasValueFloat           "30"^^xsd:float 
+                                ] ;
+    gr:color                    "red" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         3.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondNylonRunner60>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Nylon 18mm x 60cm Runner"@en ;
+    gr:description              "Versatile sewn runners for building anchors, slinging natural features and extending placements on wandering routes, Black Diamond Nylon Runners offer durable and classic functionality. Each size is also color-coded for quick and easy identification on your harness."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			false ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "18"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "CMT"^^xsd:string ;
+                                 gr:hasValueFloat           "60"^^xsd:float 
+                                ] ;
+    gr:color                    "yellow" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         4.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondNylonRunner120>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Nylon 18mm x 120cm Runner"@en ;
+    gr:description              "Versatile sewn runners for building anchors, slinging natural features and extending placements on wandering routes, Black Diamond Nylon Runners offer durable and classic functionality. Each size is also color-coded for quick and easy identification on your harness."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			false ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "18"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "CMT"^^xsd:string ;
+                                 gr:hasValueFloat           "120"^^xsd:float 
+                                ] ;
+    gr:color                    "blue" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         8.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#BlackDiamondNylonRunner240>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Black Diamond Nylon 18mm x 240cm Runner"@en ;
+    gr:description              "Versatile sewn runners for building anchors, slinging natural features and extending placements on wandering routes, Black Diamond Nylon Runners offer durable and classic functionality. Each size is also color-coded for quick and easy identification on your harness."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			false ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "18"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "CMT"^^xsd:string ;
+                                 gr:hasValueFloat           "240"^^xsd:float 
+                                ] ;
+    gr:color                    "silver" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         14.95 ;
+    gr:hasBrand                 rc:BlackDiamond .
+
+<http://www.ninepts.com/RocProducts#MammutDyneemaContactSling60>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Mammut Dyneema Contact 8mm x 60cm"@en ;
+    gr:description              "The Mammut 8mm Contact Dyneema Slingsare the latest generation of the unbeatable Mammut contact slings: A very strong Dyneema webbing combined with the innovative Contact stitching technique ensures optimum handing, even in the seam area of these lightweight, high-end slings."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			true ;
+    gr:width 		    		[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "8"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "CMT"^^xsd:string ;
+                                 gr:hasValueFloat           "60"^^xsd:float 
+                                ] ;
+    gr:color                    "red" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         8.95 ;
+    gr:hasBrand                 rc:Mammut .
+
+<http://www.ninepts.com/RocProducts#MammutDyneemaContactSling120>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Mammut Dyneema Contact 8mm x 120cm"@en ;
+    gr:description              "The Mammut 8mm Contact Dyneema Slingsare the latest generation of the unbeatable Mammut contact slings: A very strong Dyneema webbing combined with the innovative Contact stitching technique ensures optimum handing, even in the seam area of these lightweight, high-end slings."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			true ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "8"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "CMT"^^xsd:string ;
+                                 gr:hasValueFloat           "120"^^xsd:float 
+                                ] ;
+    gr:color                    "blue" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         14.95 ;
+    gr:hasBrand                 rc:Mammut .
+
+<http://www.ninepts.com/RocProducts#MammutTubularSling60>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Mammut Tubular Sling 16mm x 60cm"@en ;
+    gr:description              "The Tubular Sling 16.0 is a classic in Mammut's collection for climbers and alpinists alike."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			false ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "16"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "CMT"^^xsd:string ;
+                                 gr:hasValueFloat           "60"^^xsd:float 
+                                ] ;
+    gr:color                    "red" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         5.45 ;
+    gr:hasBrand                 rc:Mammut .
+
+<http://www.ninepts.com/RocProducts#MammutTubularSling120>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Mammut Tubular Sling 16mm x 120cm"@en ;
+    gr:description              "The Tubular Sling 16.0 is a classic in Mammut's collection for climbers and alpinists alike."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			false ;
+    gr:width 			    	[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "16"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "CMT"^^xsd:string ;
+                                 gr:hasValueFloat           "120"^^xsd:float 
+                                ] ;
+    gr:color                    "blue" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         8.45 ;
+    gr:hasBrand                 rc:Mammut .
+
+<http://www.ninepts.com/RocProducts#SterlingDyneemaSewnRunner10>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Serling Dyneema Sewn Runner 10 inch"@en ;
+    gr:description              "These lightweight slings features a thin yet super-strong construction that makes them ideal for demanding alpine climbs and the rigors of trad climbing. The light, moisture-resistant material keeps you safe, whether you’re building anchors or extending gear placements."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			true ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "12"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "INH"^^xsd:string ;
+                                 gr:hasValueFloat           "10"^^xsd:float 
+                                ] ;
+    gr:color                    "blue" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         6.25 ;
+    gr:hasBrand                 rc:Sterling .
+
+<http://www.ninepts.com/RocProducts#SterlingDyneemaSewnRunner24>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Serling Dyneema Sewn Runner 24 inch"@en ;
+    gr:description              "These lightweight slings features a thin yet super-strong construction that makes them ideal for demanding alpine climbs and the rigors of trad climbing. The light, moisture-resistant material keeps you safe, whether you’re building anchors or extending gear placements."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			true ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "12"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "INH"^^xsd:string ;
+                                 gr:hasValueFloat           "24"^^xsd:float 
+                                ] ;
+    gr:color                    "black", "orange" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         9.45 ;
+    gr:hasBrand                 rc:Sterling .
+
+<http://www.ninepts.com/RocProducts#SterlingDyneemaSewnRunner30>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Serling Dyneema Sewn Runner 30 inch"@en ;
+    gr:description              "These lightweight slings features a thin yet super-strong construction that makes them ideal for demanding alpine climbs and the rigors of trad climbing. The light, moisture-resistant material keeps you safe, whether you’re building anchors or extending gear placements."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			true ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "12"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "INH"^^xsd:string ;
+                                 gr:hasValueFloat           "30"^^xsd:float 
+                                ] ;
+    gr:color                    "blue" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         12.70 ;
+    gr:hasBrand                 rc:Sterling .
+
+<http://www.ninepts.com/RocProducts#SterlingNylonSewnRunner30>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Serling Nylon Sewn Runner 30 inch"@en ;
+    gr:description              "Pick up the Sterling 17mm x 30in Nylon Sewn Runners for building anchors, extending gear placements, or racking gear."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			false ;
+    gr:width 		    		[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "17"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "INH"^^xsd:string ;
+                                 gr:hasValueFloat           "30"^^xsd:float 
+                                ] ;
+    gr:color                    "green" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         5.65 ;
+    gr:hasBrand                 rc:Sterling .
+
+<http://www.ninepts.com/RocProducts#SterlingNylonSewnRunner48>
+    rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
+    gr:name                     "Serling Nylon Sewn Runner 48 inch"@en ;
+    gr:description              "Pick up the Sterling 17mm x 48in Nylon Sewn Runners for building anchors, extending gear placements, or racking gear."@en;
+    roc:uiaaApproved          true ;
+    roc:synthetic 			false ;
+    gr:width 				    [
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "MMT"^^xsd:string ;
+                                 gr:hasValueFloat           "17"^^xsd:float 
+                                ] ;
+    gr:height     				[
+                                 rdf:type                   gr:QuantitativeValueFloat ;
+                                 gr:hasUnitOfMeasurement    "INH"^^xsd:string ;
+                                 gr:hasValueFloat           "48"^^xsd:float 
+                                ] ;
+    gr:color                    "red", "silver" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         7.70 ;
+    gr:hasBrand                 rc:Sterling .
+
+
+# Shoes
+
+
+
+# Quickdraws
+
+<http://www.ninepts.com/RocProducts#DMMShadowKeylockQuickdraw>
+    rdf:type                    owl:NamedIndividual, roc:Quickdraw, gr:ProductOrServiceModel ;
+    gr:name                     "DMM Shadow Keylock Quickdraw"@en ;
+    gr:description              "The bent gate version of the classic sport climbing biner, the Shadow, forms the rope clipping end of the quickdraw. The inside of the biner has a deep basket to ensure that the rope is guided towards the spine for added safety. "@en;
+    roc:uiaaApproved          true ;
+    gr:weight                   [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "90"^^xsd:float 
+                                ] ;
+    gr:color                    "blue", "black" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         18.50 ;
+    gr:hasBrand                 rc:DMM .
+
+<http://www.ninepts.com/RocProducts#GrivelAlphaQuickEasyQuickdraw>
+    rdf:type                    owl:NamedIndividual, roc:Quickdraw, gr:ProductOrServiceModel ;
+    gr:name                     "Grivel Alpha Quick Easy Quickdraw"@en ;
+    gr:description              "The Grivel Alpha Easy quickdraw combines lightweight carabiners with a semirigid sling for fast ascents of challenging sport climbs."@en;
+    roc:uiaaApproved          true ;
+    gr:weight                   [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "118.8"^^xsd:float 
+                                ] ;
+    gr:color                    "black", "ghost", "clear" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         23.99 ;
+    gr:hasBrand                 rc:Grivel .
+
+<http://www.ninepts.com/RocProducts#TrangoPhaseAlpineQuickdraw>
+    rdf:type                    owl:NamedIndividual, roc:Quickdraw, gr:ProductOrServiceModel ;
+    gr:name                     "Trango Phase Alpine Quickdraw"@en ;
+    gr:description              "With 2 lightweight wiregate carabiners and a low-bulk sling, the Trango Phase Alpine Quickdraw is a great choice for your alpine multipitch climbs."@en;
+    roc:uiaaApproved          true ;
+    gr:weight                   [
+                                 rdf:type                   gr:QuantitativeValue ;
+                                 gr:hasUnitOfMeasurement    "GRM"^^xsd:string ;
+                                 gr:hasValue                "80"^^xsd:float 
+                                ] ;
+    gr:color                    "blue/orange" ;
+    gr:hasCurrency              "USD" ;
+    gr:hasCurrencyValue         20.00 ;
+    gr:hasBrand                 rc:Trango .

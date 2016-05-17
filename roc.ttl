@@ -1,0 +1,307 @@
+@prefix roc:		<http://www.ninepts.com/roc#> .
+@prefix dc:			<http://purl.org/dc/elements/1.1/> .
+@prefix gr:         <http://purl.org/goodrelations/v1#> .
+@prefix owl:    	<http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.ninepts.com/roc>
+	rdf:type					owl:Ontology ;
+	owl:versionInfo				"1.0" ;
+	owl:imports 				<http://purl.org/goodrelations/v1> .
+
+
+# ===================================================================
+# Datatype Properties
+# ===================================================================
+
+<http://www.ninepts.com/roc#dynamic>
+    rdf:type            owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label          "dynamic (boolean)"@en ;
+    dc:description      "Boolean indicating whether the rope has the ability to stretch when weighted and therefore safely catch a falling climber."@en;
+    rdfs:domain         roc:Rope ;
+    rdfs:range          xsd:boolean .
+
+<http://www.ninepts.com/roc#locking>
+    rdf:type            owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label          "locking (boolean)"@en ;
+    dc:description      "Boolean indicating whether the product model of a carabiner has a locking gate, meaning the gate cannot be opened while in the locked position."@en;
+    rdfs:domain         roc:Carabiner ;
+    rdfs:range          xsd:boolean .
+
+<http://www.ninepts.com/roc#synthetic>
+    rdf:type            owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label          "synthetic (boolean)"@en ;
+    dc:description      "Boolean indicating whether the product model of a runner is designed with synthetic material. If not, the product is designed with nylon."@en;
+    rdfs:domain         roc:Runner ;
+    rdfs:range          xsd:boolean .
+
+<http://www.ninepts.com/roc#uiaaApproved>
+    rdf:type            owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label          "UIAA approved (boolean)"@en ;
+    dc:description      "Boolean indicating whether the product has and meets/exceeds safety standards set by UIAA for safe climbing."@en;
+    rdfs:domain         gr:ProductOrServiceModel ;
+    rdfs:range          xsd:boolean .
+
+
+# ===================================================================
+# Object Properties
+# ===================================================================
+
+<http://www.ninepts.com/roc#designedFor>
+	rdf:type			owl:ObjectProperty, owl:FunctionalProperty ;
+	rdfs:subPropertyOf	gr:qualitativeProductOrServiceProperty ;
+	rdfs:label 			"designed for"@en ;
+	dc:description 		"Is a relationship between a product model and an enumeration that describes the type of person the gear is intended for, i.e. men, women, or youth."@en;
+	rdfs:domain			gr:ProductOrServiceModel ;
+	rdfs:range			gr:QualitativeValue .
+
+<http://www.ninepts.com/roc#hasCondition>
+	rdf:type			owl:ObjectProperty, owl:FunctionalProperty ;
+	rdfs:subPropertyOf	gr:qualitativeProductOrServiceProperty ;
+	rdfs:label 			"has condition"@en ;
+	dc:description 		"Is a relationship between an individual piece of gear in a collection and an enumeration that describes the actual state based on use of that gear, like-new, good, poor, or damaged."@en;
+	rdfs:domain			gr:Individual ;
+	rdfs:range			gr:QualitativeValue .
+
+<http://www.ninepts.com/roc#hasSize>
+	rdf:type			owl:ObjectProperty, owl:FunctionalProperty ;
+	rdfs:subPropertyOf	gr:qualitativeProductOrServiceProperty ;
+	rdfs:label 			"has size"@en ;
+	dc:description 		"Is a relationship between a product model and an enumeration that describes the size range that the gear fits, i.e. XS, S, M, L, XL."@en;
+	rdfs:domain			gr:ProductOrServiceModel ;
+	rdfs:range			gr:QualitativeValue .
+
+
+# ===================================================================
+# Enums
+# ===================================================================
+
+<http://www.ninepts.com/roc#Condition>
+	rdf:type					owl:Class ;
+	owl:subClassOf				gr:QualitativeValue ;
+	rdfs:label 					"Condition"@en ;
+    owl:equivalentClass		[
+   								rdf:type	owl:Class ;
+   								owl:oneOf	(roc:LikeNew
+   											 roc:Good
+   											 roc:Poor
+   											 roc:Damaged )
+   						 	] .
+
+<http://www.ninepts.com/roc#LikeNew>
+	rdf:type 					owl:NamedIndividual, roc:Condition ;
+	rdfs:label 					"Like-New" .
+
+<http://www.ninepts.com/roc#Good>
+	rdf:type 					owl:NamedIndividual, roc:Condition ;
+	rdfs:label 					"Good" .
+
+<http://www.ninepts.com/roc#Poor>
+	rdf:type 					owl:NamedIndividual, roc:Condition ;
+	rdfs:label 					"Poor" .
+
+<http://www.ninepts.com/roc#Damaged>
+	rdf:type 					owl:NamedIndividual, roc:Condition ;
+	rdfs:label 					"Damaged" .
+
+<http://www.ninepts.com/roc#Design>
+	rdf:type					owl:Class ;
+	owl:subClassOf				gr:QualitativeValue ;
+	rdfs:label 					"Design"@en ;
+    owl:equivalentClass		[
+   								rdf:type	owl:Class ;
+   								owl:oneOf	(roc:Men
+   											 roc:Women
+   											 roc:Youth )
+   						 	] .
+
+<http://www.ninepts.com/roc#Men>
+	rdf:type 					owl:NamedIndividual, roc:Design ;
+	rdfs:label 					"Men" .
+
+<http://www.ninepts.com/roc#Women>
+	rdf:type 					owl:NamedIndividual, roc:Design ;
+	rdfs:label 					"Women" .
+
+<http://www.ninepts.com/roc#Youth>
+	rdf:type 					owl:NamedIndividual, roc:Design ;
+	rdfs:label 					"Youth" .
+
+<http://www.ninepts.com/roc#Size>
+	rdf:type					owl:Class ;
+	owl:subClassOf				gr:QualitativeValue ;
+	rdfs:label 					"Size"@en ;
+    owl:equivalentClass		[
+   								rdf:type	owl:Class ;
+   								owl:oneOf	(roc:XS 
+   											 roc:S
+   											 roc:M
+   											 roc:L
+   											 roc:XL )
+   						 	] .
+
+<http://www.ninepts.com/roc#XS>
+	rdf:type 					owl:NamedIndividual, roc:Size ;
+	rdfs:label 					"Extra Small" .
+
+<http://www.ninepts.com/roc#S>
+	rdf:type 					owl:NamedIndividual, roc:Size ;
+	rdfs:label 					"Small" .
+
+<http://www.ninepts.com/roc#M>
+	rdf:type 					owl:NamedIndividual, roc:Size ;
+	rdfs:label 					"Medium" .
+
+<http://www.ninepts.com/roc#L>
+	rdf:type 					owl:NamedIndividual, roc:Size ;
+	rdfs:label 					"Large" .
+
+<http://www.ninepts.com/roc#XL>
+	rdf:type 					owl:NamedIndividual, roc:Size ;
+	rdfs:label 					"Extra Large" .
+
+
+# ===================================================================
+# Product Classes
+# ===================================================================
+
+<http://www.ninepts.com/roc#AccessoryGear>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:ClimbingGear ;
+    rdfs:label                  "Accessory Gear"@en ;
+    dc:description              "Gear that is used in during the activity of climbing."@en.
+
+<http://www.ninepts.com/roc#ActiveProtection>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:Protection ;
+    rdfs:label                  "Active Protection"@en ;
+    dc:description              "A type of protection characterized by having moving parts."@en.
+
+<http://www.ninepts.com/roc#AutoBrakingDevice>
+    rdf:type                    owl:Class ; 
+    rdfs:subClassOf             roc:BelayDevice ;
+    rdfs:label                  "Auto-Braking Device"@en ;
+    dc:description              "A type of belay device that automatically locks down on the rope when shock-loaded."@en.
+
+<http://www.ninepts.com/roc#BelayDevice>
+    rdf:type                    owl:Class ; 
+    rdfs:subClassOf             roc:AccessoryGear ;
+    rdfs:label                  "Belay Device"@en ;
+    dc:description              "A type of accessory gear which controls the rope."@en.
+
+<http://www.ninepts.com/roc#Carabiner>
+    rdf:type                    owl:Class ; 
+    rdfs:subClassOf             roc:AccessoryGear ;
+    rdfs:label                  "Carabiner"@en ;
+    dc:description              "A type of accessory gear that consists of a metal link with gate used to safely connect componements."@en.
+
+<http://www.ninepts.com/roc#Chalk>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:Consumable ;
+    rdfs:label                  "Chalk"@en ;
+    dc:description              "A type of consumable powdered chalk used on the hands to increase surface friction with the rock."@en.
+
+<http://www.ninepts.com/roc#ClimbingGear>
+    rdf:type                    owl:Class ;
+    rdfs:label                  "Climbing Gear"@en ;
+    dc:description              "Equipment used by rock climbers."@en.
+
+<http://www.ninepts.com/roc#ClimbingShoe>
+    rdf:type                    owl:Class ; 
+    rdfs:subClassOf             roc:WearableGear ;
+    rdfs:label                  "Climbing Shoe"@en ;
+    dc:description              "A type of wearable gear that is specialized footware with sticky rubber sole for climbing."@en.
+
+<http://www.ninepts.com/roc#Consumable>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:ClimbingGear ;
+    rdfs:label                  "Consumable"@en ;
+    dc:description              "Climbing gear that is used up and therefore consistently replaced."@en.
+
+<http://www.ninepts.com/roc#CrashPad>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:AccessoryGear ;
+    rdfs:label                  "Crash Pad"@en ;
+    dc:description              "A type of accessory gear that is a large, soft yet firm, pad used in the activity of bouldering. Placed under the climber to prevent injuries when falling."@en.
+
+<http://www.ninepts.com/roc#Harness>
+    rdf:type                    owl:Class ; 
+    rdfs:subClassOf             roc:WearableGear ;
+    rdfs:label                  "Harness"@en ;
+    skos:inScheme				roc:catalog ;
+    dc:description              "A type of wearable gear that secures the climber to the rope or anchor."@en.
+
+<http://www.ninepts.com/roc#HealingBalm>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:Consumable ;
+    rdfs:label                  "Healing Balm"@en ;
+    dc:description              "A type of consumable balm rubbed into palms after climbing to rehydrate, soften, and heal cracked skin and callouses."@en.
+
+<http://www.ninepts.com/roc#Helmet>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:ProtectiveWear ;
+    rdfs:label                  "Helmet"@en ;
+    dc:description              "A type of protective wear for the head to prevent concussions."@en.
+
+<http://www.ninepts.com/roc#MiscWorn>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:WearableGear ;
+    rdfs:label                  "Miscellaneous Worn Gear"@en ;
+    dc:description              "Any other type of wearable gear for rock climbing."@en.
+
+<http://www.ninepts.com/roc#PassiveProtection>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:Protection ;
+    rdfs:label                  "Passive Protection"@en ;
+    dc:description              "A type of protection characterized by no moving parts."@en.
+
+<http://www.ninepts.com/roc#PersonalAnchorSystem>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:AccessoryGear ;
+    rdfs:label                  "Personal Anchor System"@en ;
+    dc:description              "A type of accessory gear that is a personal tether to connect the climber to an anchor from the harness. Allows the climber to safely go off belay."@en.
+
+<http://www.ninepts.com/roc#Protection>
+    rdf:type                    owl:Class ; 
+    rdfs:subClassOf             roc:AccessoryGear ;
+    rdfs:label                  "Protection"@en ;
+    dc:description              "A type of accessory gear that is any removeable gear placed in rock to protect falls."@en.
+
+<http://www.ninepts.com/roc#ProtectiveWear>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:WearableGear ;
+    rdfs:label                  "Protective Wear"@en ;
+    dc:description              "Any wearable gear that prevents injuries."@en.
+
+<http://www.ninepts.com/roc#Quickdraw>
+    rdf:type                    owl:Class ; 
+    rdfs:subClassOf             roc:AccessoryGear ;
+    rdfs:label                  "Quickdraw"@en ;
+    dc:description              "A type of accessory gear that is a combination of two non-locking carabiners and a stitched bone to connect them. Used on sport routes to allow to rope to run freely through protection or bolts."@en.
+
+<http://www.ninepts.com/roc#Rope>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:AccessoryGear ;
+    rdfs:label                  "Rope"@en ;
+    dc:description              "A type of accesory gear that is any rope used to climb or prepare anchors."@en.
+
+<http://www.ninepts.com/roc#Runner>
+    rdf:type                    owl:Class ; 
+    rdfs:subClassOf             roc:AccessoryGear ;
+    rdfs:label                  "Runner"@en ;
+    dc:description              "A type of accessory gear that consists of a loop of webbing used for a variety of purposes."@en.
+
+<http://www.ninepts.com/roc#TubularDevice>
+    rdf:type                    owl:Class ; 
+    rdfs:subClassOf             roc:BelayDevice ;
+    rdfs:label                  "Tubular Device"@en ;
+    dc:description              "A type of belay device that creates friction on the rope when the rope is run through. The rope can be locked by pulling down on the rope from the braking plane."@en.
+
+<http://www.ninepts.com/roc#WearableGear>
+    rdf:type                    owl:Class ;
+    rdfs:subClassOf             roc:ClimbingGear ;
+    rdfs:label                  "Wearable Gear"@en ;
+    dc:description              "Any climbing gear worn on the person."@en.
+
