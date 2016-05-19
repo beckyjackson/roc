@@ -1,4 +1,4 @@
-@prefix pc:			<http://www.ninepts.com/personalCollection#> .
+@prefix roc-pc:		<http://www.ninepts.com/roc-PersonalCollection#> .
 @prefix roc:		<http://www.ninepts.com/roc#> .
 @prefix rp:		    <http://www.ninepts.com/rocProducts#> .
 @prefix gr:         <http://purl.org/goodrelations/v1#> .
@@ -8,40 +8,40 @@
 @prefix skos:		<https://www.w3.org/TR/skos-reference/#> .
 
 
-<http://www.ninepts.com/personalCollection>
+<http://www.ninepts.com/roc-PersonalCollection>
 	rdf:type				owl:Ontology ;
 	gr:name   				"My Collection" ;
 	owl:versionInfo			"1.0" ;
 	owl:imports 			<http://purl.org/goodrelations/v1> ; 
-    owl:imports				<http://www.ninepts.com/rocProducts> .
+    owl:imports				<http://www.ninepts.com/roc-ProductModels> .
 
 
 # ===================================================================
 # Belay Devices
 # ===================================================================
 
-<http://www.ninepts.com/MyCollection#BlackDiamondATC>
+<http://www.ninepts.com/roc-PersonalCollection#BlackDiamondATC>
 	rdf:type 					owl:NamedIndividual, gr:Individual, roc:TubularDevice ;
 	gr:name   					"Black Diamond ATC"@en ;
 	gr:hasMakeAndModel			rp:BlackDiamondATC ;
 	gr:color					"denim" ;
 	roc:hasCondition			roc:Good .
 
-<http://www.ninepts.com/MyCollection#BlackDiamondATCGuide>
+<http://www.ninepts.com/roc-PersonalCollection#BlackDiamondATCGuide>
 	rdf:type 					owl:NamedIndividual, gr:Individual, roc:TubularDevice ;
 	gr:name   					"Black Diamond ATC Guide"@en ;
 	gr:hasMakeAndModel			rp:BlackDiamondATCGuide ;
 	gr:color					"black" ;
 	roc:hasCondition			roc:damaged .
 
-<http://www.ninepts.com/MyCollection#PetzlGriGri2>
+<http://www.ninepts.com/roc-PersonalCollection#PetzlGriGri2>
 	rdf:type 					owl:NamedIndividual, gr:Individual, roc:AutoBrakingDevice ;
 	gr:name   					"Petzl GRIGRI 2"@en ;
 	gr:hasMakeAndModel			rp:PetzlGriGri2 ;
 	gr:color					"silver" ;
 	roc:hasCondition			roc:good .
 
-<http://www.ninepts.com/MyCollection#PetzlVerso>
+<http://www.ninepts.com/roc-PersonalCollection#PetzlVerso>
 	rdf:type 					owl:NamedIndividual, gr:Individual, roc:TubularDevice ;
 	gr:name   					"Petzl Verso"@en ;
 	gr:hasMakeAndModel			rp:PetzlVerso ;
@@ -74,7 +74,7 @@
 # Harnesses
 # ===================================================================
 
-<http://www.ninepts.com/MyCollection#EdelridJayneIIClimbingHarness-XS>
+<http://www.ninepts.com/roc-PersonalCollection#EdelridJayneIIClimbingHarness-XS>
 	rdf:type 					owl:NamedIndividual, gr:Individual, roc:Harness ;
 	gr:name   					"Edelrid Jayne II Climbing Harness - XS"@en ;
 	gr:hasMakeAndModel			rp:EdelridJayneIIClimbingHarness-XS ;
@@ -86,7 +86,7 @@
 # Other
 # ===================================================================
 
-<http://www.ninepts.com/MyCollection#MetoliusPas22PersonalAnchorSystem>
+<http://www.ninepts.com/roc-PersonalCollection#MetoliusPas22PersonalAnchorSystem>
 	rdf:type 					owl:NamedIndividual, gr:Individual, roc:PersonalAnchorSystem ;
 	gr:name   					"Metolius PAS 22 Personal Anchor System"@en ;
 	gr:hasMakeAndModel			rp:MetoliusPas22PersonalAnchorSystem ;
@@ -98,49 +98,49 @@
 # Protection
 # ===================================================================
 
-<http://www.ninepts.com/MyCollection#BlackDiamondCamalotC4CamPoint75-1>
+<http://www.ninepts.com/roc-PersonalCollection#BlackDiamondCamalotC4CamPoint75-1>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:ActiveProtection ;
     gr:name                     "Black Diamond Camalot C4 Cam, 0.75 - 1"@en ;
     gr:hasMakeAndModel			rp:BlackDiamondCamalotC4CamPoint75 ;
     gr:color					"green" ;
     roc:hasCondition 			roc:great .
 
-<http://www.ninepts.com/MyCollection#BlackDiamondCamalotC4CamPoint75-2>
+<http://www.ninepts.com/roc-PersonalCollection#BlackDiamondCamalotC4CamPoint75-2>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:ActiveProtection ;
     gr:name                     "Black Diamond Camalot C4 Cam, 0.75 - 2"@en ;
     gr:hasMakeAndModel			rp:BlackDiamondCamalotC4CamPoint75 ;
     gr:color					"green" ;
     roc:hasCondition 			roc:poor .
 
-<http://www.ninepts.com/MyCollection#BlackDiamondCamalotC4Cam1-1>
+<http://www.ninepts.com/roc-PersonalCollection#BlackDiamondCamalotC4Cam1-1>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:ActiveProtection ;
     gr:name                     "Black Diamond Camalot C4 Cam, 1 - 1"@en ;
     gr:hasMakeAndModel			rp:BlackDiamondCamalotC4Cam1 ;
     gr:color                    "red" ;
     roc:hasCondition 			roc:great .
 
-<http://www.ninepts.com/MyCollection#BlackDiamondCamalotC4Cam1-2>
+<http://www.ninepts.com/roc-PersonalCollection#BlackDiamondCamalotC4Cam1-2>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:ActiveProtection ;
     gr:name                     "Black Diamond Camalot C4 Cam, 1 - 2"@en ;
     gr:hasMakeAndModel			rp:BlackDiamondCamalotC4Cam1 ;
     gr:color                    "red" ;
     roc:hasCondition 			roc:poor .
 
-<http://www.ninepts.com/MyCollection#BlackDiamondCamalotC4Cam2-1>
+<http://www.ninepts.com/roc-PersonalCollection#BlackDiamondCamalotC4Cam2-1>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:ActiveProtection ;
     gr:name                     "Black Diamond Camalot C4 Cam, 2 - 1"@en ;
     gr:hasMakeAndModel			rp:BlackDiamondCamalotC4Cam2 ;
     gr:color                    "yellow" ;
     roc:hasCondition 			roc:great .
 
-<http://www.ninepts.com/MyCollection#BlackDiamondCamalotC4Cam2-2>
+<http://www.ninepts.com/roc-PersonalCollection#BlackDiamondCamalotC4Cam2-2>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:ActiveProtection ;
     gr:name                     "Black Diamond Camalot C4 Cam, 2 - 2"@en ;
     gr:hasMakeAndModel			rp:BlackDiamondCamalotC4Cam2 ;
     gr:color                    "yellow" ;
     roc:hasCondition 			roc:poor .
 
-<http://www.ninepts.com/MyCollection#BlackDiamondStopperSet1to13>
+<http://www.ninepts.com/roc-PersonalCollection#BlackDiamondStopperSet1to13>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:PassiveProtection ;
     gr:name                     "Black Diamond Stopper Set 1-13"@en ;
     gr:hasMakeAndModel			rp:BlackDiamondStopperSet1to13 ;
@@ -152,7 +152,7 @@
 # Ropes
 # ===================================================================
 
-<http://www.ninepts.com/MyCollection#SterlingEvoltuionVelocity70m>
+<http://www.ninepts.com/roc-PersonalCollection#SterlingEvoltuionVelocity70m>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:Rope ;
     gr:name                     "Sterling Evolution Velocity 70M"@en ;
     gr:hasMakeAndModel			rp:SterlingEvoltuionVelocity70m ;
@@ -178,56 +178,56 @@
 # Quickdraws
 # ===================================================================
 
-<http://www.ninepts.com/MyCollection#GrivelAlphaQuickEasyQuickdraw-1>
+<http://www.ninepts.com/roc-PersonalCollection#GrivelAlphaQuickEasyQuickdraw-1>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:Quickdraw ;
     gr:name                     "Grivel Alpha Quick Easy Quickdraw - 1"@en ;
     gr:hasMakeAndModel			rp:GrivelAlphaQuickEasyQuickdraw ;
     gr:color                    "black" ;
     roc:hasCondition		 	roc:good .
 
-<http://www.ninepts.com/MyCollection#GrivelAlphaQuickEasyQuickdraw-2>
+<http://www.ninepts.com/roc-PersonalCollection#GrivelAlphaQuickEasyQuickdraw-2>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:Quickdraw ;
     gr:name                     "Grivel Alpha Quick Easy Quickdraw - 2"@en ;
     gr:hasMakeAndModel			rp:GrivelAlphaQuickEasyQuickdraw ;
     gr:color                    "black" ;
     roc:hasCondition		 	roc:good .
 
-<http://www.ninepts.com/MyCollection#GrivelAlphaQuickEasyQuickdraw-3>
+<http://www.ninepts.com/roc-PersonalCollection#GrivelAlphaQuickEasyQuickdraw-3>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:Quickdraw ;
     gr:name                     "Grivel Alpha Quick Easy Quickdraw - 3"@en ;
     gr:hasMakeAndModel			rp:GrivelAlphaQuickEasyQuickdraw ;
     gr:color                    "black" ;
     roc:hasCondition		 	roc:good .
 
-<http://www.ninepts.com/MyCollection#GrivelAlphaQuickEasyQuickdraw-4>
+<http://www.ninepts.com/roc-PersonalCollection#GrivelAlphaQuickEasyQuickdraw-4>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:Quickdraw ;
     gr:name                     "Grivel Alpha Quick Easy Quickdraw - 4"@en ;
     gr:hasMakeAndModel			rp:GrivelAlphaQuickEasyQuickdraw ;
     gr:color                    "black" ;
     roc:hasCondition		 	roc:good .
 
-<http://www.ninepts.com/MyCollection#GrivelAlphaQuickEasyQuickdraw-5>
+<http://www.ninepts.com/roc-PersonalCollection#GrivelAlphaQuickEasyQuickdraw-5>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:Quickdraw ;
     gr:name                     "Grivel Alpha Quick Easy Quickdraw - 5"@en ;
     gr:hasMakeAndModel			rp:GrivelAlphaQuickEasyQuickdraw ;
     gr:color                    "black" ;
     roc:hasCondition		 	roc:good .
 
-<http://www.ninepts.com/MyCollection#GrivelAlphaQuickEasyQuickdraw-6>
+<http://www.ninepts.com/roc-PersonalCollection#GrivelAlphaQuickEasyQuickdraw-6>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:Quickdraw ;
     gr:name                     "Grivel Alpha Quick Easy Quickdraw - 6"@en ;
     gr:hasMakeAndModel			rp:GrivelAlphaQuickEasyQuickdraw ;
     gr:color                    "black" ;
     roc:hasCondition		 	roc:good .
 
-<http://www.ninepts.com/MyCollection#GrivelAlphaQuickEasyQuickdraw-7>
+<http://www.ninepts.com/roc-PersonalCollection#GrivelAlphaQuickEasyQuickdraw-7>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:Quickdraw ;
     gr:name                     "Grivel Alpha Quick Easy Quickdraw - 7"@en ;
     gr:hasMakeAndModel			rp:GrivelAlphaQuickEasyQuickdraw ;
     gr:color                    "black" ;
     roc:hasCondition		 	roc:good .
 
-<http://www.ninepts.com/MyCollection#GrivelAlphaQuickEasyQuickdraw-8>
+<http://www.ninepts.com/roc-PersonalCollection#GrivelAlphaQuickEasyQuickdraw-8>
     rdf:type                    owl:NamedIndividual, gr:Individual, roc:Quickdraw ;
     gr:name                     "Grivel Alpha Quick Easy Quickdraw - 8"@en ;
     gr:hasMakeAndModel			rp:GrivelAlphaQuickEasyQuickdraw ;

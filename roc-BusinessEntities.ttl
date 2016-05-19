@@ -1,11 +1,11 @@
-@prefix rc:         <http://www.ninepts.com/rocCompanies#> .
-@prefix roc:      <http://www.ninepts.com/roc#> .
+@prefix roc-be:     <http://www.ninepts.com/roc-BusinessEntities#> .
+@prefix roc:        <http://www.ninepts.com/roc#> .
 @prefix foaf:       <http://xmlns.com/foaf/spec/#> .
 @prefix gr:         <http://purl.org/goodrelations/v1#> .
 @prefix owl:        <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://www.ninepts.com/rocCompanies>
+<http://www.ninepts.com/roc-BusinessEntities>
     rdf:type                    owl:Ontology ;
     owl:versionInfo             "1.0" ;
     owl:imports                 <http://www.ninepts.com/roc> .
@@ -15,7 +15,7 @@
 # Individual Businesses
 # ===================================================================
 
-<http://www.ninepts.com/RocCompanies#BlackDiamond>
+<http://www.ninepts.com/roc-BusinessEntities#BlackDiamond>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "Black Diamond"@en ;
     gr:legalName                "Black Diamond Equipment, Ltd."@en ;
@@ -26,7 +26,7 @@
     gr:hasDUNS                  "791297658"^^xsd:string;
     foaf:page                   <http://blackdiamondequipment.com> .
 
-<http://www.ninepts.com/RocCompanies#Camp>
+<http://www.ninepts.com/roc-BusinessEntities#Camp>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "C.A.M.P."@en ;
     gr:legalName                "C.A.M.P. USA Inc."@en ;
@@ -37,7 +37,7 @@
     gr:hasDUNS                  ""^^xsd:string;
     foaf:page                   <http://www.camp-usa.com/> .
 
-<http://www.ninepts.com/RocCompanies#DMM>
+<http://www.ninepts.com/roc-BusinessEntities#DMM>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "DMM"@en ;
     gr:legalName                "DMM International Ltd"@en ;
@@ -48,7 +48,7 @@
     gr:hasDUNS                  ""^^xsd:string;
     foaf:page                   <http://dmmclimbing.com> .
 
-<http://www.ninepts.com/RocCompanies#FiveTen>
+<http://www.ninepts.com/roc-BusinessEntities#FiveTen>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "Five Ten"@en ;
     gr:description              "Five Ten is an American manufacturer of outdoor and athletic footwear. Founded in 1985 by Charles Cole, Five Ten is one of the top-selling climbing shoe manufacturers worldwide."@en.
@@ -58,7 +58,7 @@
     gr:hasDUNS                  "120860585"^^xsd:string;
     foaf:page                   <http://www.fiveten.com/> .
 
-<http://www.ninepts.com/RocCompanies#Grivel>
+<http://www.ninepts.com/roc-BusinessEntities#Grivel>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "Grivel"@en ;
     gr:legalName                "Grivel S.R.L"@en ;
@@ -69,7 +69,7 @@
     gr:hasDUNS                  ""^^xsd:string;
     foaf:page                   <http://www.grivel.com/> .
 
-<http://www.ninepts.com/RocCompanies#LaSportiva>
+<http://www.ninepts.com/roc-BusinessEntities#LaSportiva>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "La Sportiva"@en ;
     gr:legalName                "La Sportiva N.A., Inc."@en ;
@@ -80,7 +80,7 @@
     gr:hasDUNS                  "182081935"^^xsd:string;
     foaf:page                   <http://www.sportiva.com/> .
 
-<http://www.ninepts.com/RocCompanies#Metolius>
+<http://www.ninepts.com/roc-BusinessEntities#Metolius>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "Metolius"@en ;
     gr:legalName                "Metolius Climbing"@en ;
@@ -91,7 +91,7 @@
     gr:hasDUNS                  ""^^xsd:string;
     foaf:page                   <http://www.metoliusclimbing.com/> .
 
-<http://www.ninepts.com/RocCompanies#Mammut>
+<http://www.ninepts.com/roc-BusinessEntities#Mammut>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "Mammut"@en ;
     gr:legalName                "Mammut Sports Group"@en ;
@@ -102,7 +102,7 @@
     gr:hasDUNS                  ""^^xsd:string;
     foaf:page                   <https://www.mammut.ch/> .
 
-<http://www.ninepts.com/RocCompanies#Petzl>
+<http://www.ninepts.com/roc-BusinessEntities#Petzl>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "Petzl"@en ;
     gr:legalName                "Petzl Distribution"@en ;
@@ -113,7 +113,7 @@
     gr:hasDUNS                  ""^^xsd:string;
     foaf:page                   <https://www.petzl.com> .
 
-<http://www.ninepts.com/RocCompanies#Sterling>
+<http://www.ninepts.com/roc-BusinessEntities#Sterling>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "Sterling"@en ;
     gr:legalName                "Serling Rope Co., Inc."@en ;
@@ -124,7 +124,7 @@
     gr:hasDUNS                  ""^^xsd:string;
     foaf:page                   <http://www.sterlingrope.com> .
 
-<http://www.ninepts.com/RocCompanies#Trango>
+<http://www.ninepts.com/roc-BusinessEntities#Trango>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "Trango"@en ;
     gr:legalName                "Trango USA, Ltd"@en ;
