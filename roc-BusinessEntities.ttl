@@ -20,10 +20,16 @@
     gr:name                     "Black Diamond"@en ;
     gr:legalName                "Black Diamond Equipment, Ltd."@en ;
     gr:description              "Black Diamond Equipment, Ltd. Since 1957... dedicated to designing and constructing the world's best climbing, skiing & mountain gear."@en ;
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "Black Diamond"@en
+    gr:hasDUNS                  "791297658"^^xsd:string ;
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "US";
+                                  schema:addressLocality    "Salt Lake City";
+                                  schema:addressRegion      "UT";
+                                  schema:postalCode         "84124";
+                                  schema:streetAddress      "2084 East 3900 South"
                                 ] ;
-    gr:hasDUNS                  "791297658"^^xsd:string;
+    schema:email                "bdmo@bdel.com" ;
+    schema:telephone            "1-800-775-5552" ;
     foaf:page                   <http://blackdiamondequipment.com> .
 
 <http://www.ninepts.com/roc-BusinessEntities#Camp>
@@ -31,10 +37,15 @@
     gr:name                     "C.A.M.P."@en ;
     gr:legalName                "C.A.M.P. USA Inc."@en ;
     gr:description              "Our name, CAMP, is an acronym that stands for Concezione Articoli Montagna Premana or Conception of Articles for Mountaineering Made in Premana. Because of who we are, what we do, and where we are, each and every person at CAMP eats, sleeps and breathes a true authentic mountain culture. We are a company comprised of climbers making gear for climbers."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "C.A.M.P."@en
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "US";
+                                  schema:addressLocality    "Golden";
+                                  schema:addressRegion      "CO";
+                                  schema:postalCode         "80403";
+                                  schema:streetAddress      "16050 Table Mountain Parkway #600"
                                 ] ;
-    gr:hasDUNS                  ""^^xsd:string;
+    schema:email                "climbing@camp-usa.com" ;
+    schema:telephone            "1-303-465-9429" ;
     foaf:page                   <http://www.camp-usa.com/> .
 
 <http://www.ninepts.com/roc-BusinessEntities#DMM>
@@ -42,20 +53,31 @@
     gr:name                     "DMM"@en ;
     gr:legalName                "DMM International Ltd"@en ;
     gr:description              "Founded in 1981 as Moorhouse Engineering in Bethesda, soon to become DMM and move to more suitable premises in Llanberis in 1986, the company celebrated 30 years of manufacturing in 2011."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "DMM"@en
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "GB";
+                                  schema:addressLocality    "Llanberis";
+                                  schema:addressRegion      "Gwynedd, Wales";
+                                  schema:postalCode         "LL55 4EL";
+                                  schema:streetAddress      "Y Glyn"
                                 ] ;
-    gr:hasDUNS                  ""^^xsd:string;
+    schema:email                "post@dmmwales.com" ;
+    schema:telephone            "44-0-1286-872222" ;
     foaf:page                   <http://dmmclimbing.com> .
 
 <http://www.ninepts.com/roc-BusinessEntities#FiveTen>
     rdf:type                    owl:NamedIndividual, gr:BusinessEntity ;
     gr:name                     "Five Ten"@en ;
     gr:description              "Five Ten is an American manufacturer of outdoor and athletic footwear. Founded in 1985 by Charles Cole, Five Ten is one of the top-selling climbing shoe manufacturers worldwide."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "Five Ten"@en
+    gr:hasDUNS                  "120860585"^^xsd:string ;
+    schema:address              [ a                             schema:PostalAddress;
+                                  schema:addressCountry         "US";
+                                  schema:addressLocality        "Redlands";
+                                  schema:addressRegion          "CA";
+                                  schema:postalCode             "92375";
+                                  schema:postOfficeBoxNumber    "7039"     
                                 ] ;
-    gr:hasDUNS                  "120860585"^^xsd:string;
+    schema:email                "info@grivel.com" ;
+    schema:telephone            "39-0166-54-62-87" ;
     foaf:page                   <http://www.fiveten.com/> .
 
 <http://www.ninepts.com/roc-BusinessEntities#Grivel>
@@ -63,10 +85,15 @@
     gr:name                     "Grivel"@en ;
     gr:legalName                "Grivel S.R.L"@en ;
     gr:description              "Grivel Srl is a company that produces tools and equipment for alpinism, climbing and outdoor activities. It exports to 26 countries. All the personal safety products, ice axes, crampons, pitons, helmets are produced in Italy."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "Grivel"@en
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "IT";
+                                  schema:addressLocality    "Verrayes";
+                                  schema:addressRegion      "Aosta";
+                                  schema:postalCode         "11020";
+                                  schema:streetAddress      "Loc. Champagne, 19"  
                                 ] ;
-    gr:hasDUNS                  ""^^xsd:string;
+    schema:email                "" ;
+    schema:telephone            "" ;
     foaf:page                   <http://www.grivel.com/> .
 
 <http://www.ninepts.com/roc-BusinessEntities#LaSportiva>
@@ -74,10 +101,15 @@
     gr:name                     "La Sportiva"@en ;
     gr:legalName                "La Sportiva N.A., Inc."@en ;
     gr:description              "Their mission is to bring you the best technical footwear to explore the outdoors."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "La Sportiva"@en
+    gr:hasDUNS                  "182081935"^^xsd:string ;
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "US";
+                                  schema:addressLocality    "Boulder";
+                                  schema:addressRegion      "CO";
+                                  schema:postalCode         "80301";
+                                  schema:streetAddress      "3850 Frontier Ave, #100"
                                 ] ;
-    gr:hasDUNS                  "182081935"^^xsd:string;
+    schema:telephone            "1-303-443-8710" ;
     foaf:page                   <http://www.sportiva.com/> .
 
 <http://www.ninepts.com/roc-BusinessEntities#Metolius>
@@ -85,10 +117,15 @@
     gr:name                     "Metolius"@en ;
     gr:legalName                "Metolius Climbing"@en ;
     gr:description              "At Metolius, our passion is rock climbing and our focus is designing and building the safest and best climbing gear for Big Wall, Trad, Sport, Bouldering, Mountaineering, Indoor Climbing Gyms and Training."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "Metolius"@en
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "US";
+                                  schema:addressLocality    "Bend";
+                                  schema:addressRegion      "OR";
+                                  schema:postalCode         "97701";
+                                  schema:streetAddress      "63189 Nels Anderson Road"
                                 ] ;
-    gr:hasDUNS                  ""^^xsd:string;
+    schema:email                "info@metoliusclimbing.com" ;
+    schema:telephone            "1-541-382-7585" ;
     foaf:page                   <http://www.metoliusclimbing.com/> .
 
 <http://www.ninepts.com/roc-BusinessEntities#Mammut>
@@ -96,10 +133,14 @@
     gr:name                     "Mammut"@en ;
     gr:legalName                "Mammut Sports Group"@en ;
     gr:description              "Mammut Sports Group AG is a Swiss producer of mountaineering and trekking equipment with headquarters in Seon, Switzerland. The company was founded in 1862 by Kaspar Tanner in Dintikon. Today, Mammut belongs to Conzzeta AG."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "Mammut"@en
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "CH";
+                                  schema:addressLocality    "Seon";
+                                  schema:addressRegion      "Aargau";
+                                  schema:postalCode         "CH-5703";
+                                  schema:streetAddress      "Birren 5"
                                 ] ;
-    gr:hasDUNS                  ""^^xsd:string;
+    schema:telephone            "41-0-62-769-81-81" ;
     foaf:page                   <https://www.mammut.ch/> .
 
 <http://www.ninepts.com/roc-BusinessEntities#Petzl>
@@ -107,10 +148,13 @@
     gr:name                     "Petzl"@en ;
     gr:legalName                "Petzl Distribution"@en ;
     gr:description              "Petzl is a manufacturer of climbing gear, caving gear, work-at-height equipment, and headlamps based in Crolles, France. The company was created by the cave explorer Fernand Petzl in the mid-1970s."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "Petzl"@en
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "FR";
+                                  schema:addressLocality    "Crolles";
+                                  schema:addressRegion      "Isere"  
                                 ] ;
-    gr:hasDUNS                  ""^^xsd:string;
+    schema:email                "info@petzl.com" ;
+    schema:telephone            "1-801-926-1500" ;
     foaf:page                   <https://www.petzl.com> .
 
 <http://www.ninepts.com/roc-BusinessEntities#Sterling>
@@ -118,10 +162,14 @@
     gr:name                     "Sterling"@en ;
     gr:legalName                "Serling Rope Co., Inc."@en ;
     gr:description              "Sterling Rope is the leading manufacturer of life safety rope, cord, and hardware. Made in the USA, Sterling has worked very hard to develop the best product for use in climbing, rope rescue, arbor, guiding, industrial safety, work access and OEM markets."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "Sterling"@en
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "US";
+                                  schema:addressLocality    "Biddeford";
+                                  schema:addressRegion      "ME";
+                                  schema:postalCode         "04005";
+                                  schema:streetAddress      "26 Morin St."
                                 ] ;
-    gr:hasDUNS                  ""^^xsd:string;
+    schema:telephone            "1-207-282-2550" ;
     foaf:page                   <http://www.sterlingrope.com> .
 
 <http://www.ninepts.com/roc-BusinessEntities#Trango>
@@ -129,10 +177,15 @@
     gr:name                     "Trango"@en ;
     gr:legalName                "Trango USA, Ltd"@en ;
     gr:description              "Trango is core, just like you. Innovation is born from experience, and we’re out at the crags falling in love with our next idea before we ever share it with you. There’s no room for fluff – every product fills a specific need in the quiver of the modern climber. That’s why you can always count on Trango gear to deliver something extra."@en.
-    gr:hasBrand                 [ a             gr:Brand;
-                                  gr:name       "Trango"@en
+    gr:hasDUNS                  "012453911"^^xsd:string ;
+    schema:address              [ a                         schema:PostalAddress;
+                                  schema:addressCountry     "US";
+                                  schema:addressLocality    "Louisville";
+                                  schema:addressRegion      "CO";
+                                  schema:postalCode         "80027";
+                                  schema:streetAddress      "740 S Pierce Ave"
                                 ] ;
-    gr:hasDUNS                  "012453911"^^xsd:string;
+    schema:telephone            "1-800-860-3653" ;
     foaf:page                   <http://www.trango.com/> .
 
     
