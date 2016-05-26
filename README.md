@@ -1,5 +1,5 @@
 # ROC: Retail Ontology for Climbing
-====================================================================================
+=====================================
 
 ROC provides an Ontology Design Pattern (ODP) for the integration of GoodRelations
 in to a domain-specific ontology to create a customer- and business-oriented
