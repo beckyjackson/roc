@@ -23,6 +23,12 @@
     rdfs:domain         roc:Rope ;
     rdfs:range          xsd:boolean .
 
+<http://purl.org/ninepts/roc#hasSuggestedCurrencyValue>
+    rdf:type            owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label          "has suggested currency value"@en ;
+    dc:description      "Suggested currency value based on overstock for a sale price."@en ;
+    rdfs:domain         gr:UnitPriceSpecification .
+
 <http://purl.org/ninepts/roc#locking>
     rdf:type            owl:DatatypeProperty, owl:FunctionalProperty ;
     rdfs:label          "locking (boolean)"@en ;
@@ -84,11 +90,16 @@
 	rdfs:label 					"Condition"@en ;
     owl:equivalentClass		[
    								rdf:type	owl:Class ;
-   								owl:oneOf	(roc:LikeNew
+   								owl:oneOf	(roc:New
+                                             roc:LikeNew
    											 roc:Good
    											 roc:Poor
    											 roc:Damaged )
    						 	] .
+
+<http://purl.org/ninepts/roc#New>
+    rdf:type                    owl:NamedIndividual, roc:Condition ;
+    rdfs:label                  "New" .
 
 <http://purl.org/ninepts/roc#LikeNew>
 	rdf:type 					owl:NamedIndividual, roc:Condition ;
@@ -139,7 +150,8 @@
    											 roc:S
    											 roc:M
    											 roc:L
-   											 roc:XL )
+   											 roc:XL
+                                             roc:XXL )
    						 	] .
 
 <http://purl.org/ninepts/roc#XS>
@@ -161,6 +173,10 @@
 <http://purl.org/ninepts/roc#XL>
 	rdf:type 					owl:NamedIndividual, roc:Size ;
 	rdfs:label 					"Extra Large" .
+
+<http://purl.org/ninepts/roc#XXL>
+    rdf:type                    owl:NamedIndividual, roc:Size ;
+    rdfs:label                  "2-X Large" .
 
 
 # ===================================================================
