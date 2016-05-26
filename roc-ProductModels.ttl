@@ -1,16 +1,16 @@
-@prefix roc-pm:     <http://www.ninepts.com/roc-ProductModels#> .
-@prefix roc-be:     <http://www.ninepts.com/roc-BusinessEntities#> .
-@prefix roc:        <http://www.ninepts.com/roc#> .
+@prefix roc-pm:     <http://purl.org/ninepts/roc-ProductModels#> .
+@prefix roc-be:     <http://purl.org/ninepts/roc-BusinessEntities#> .
+@prefix roc:        <http://purl.org/ninepts/roc#> .
 @prefix gr:         <http://purl.org/goodrelations/v1#> .
 @prefix owl:        <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:       <https://www.w3.org/TR/skos-reference/#> .
 
-<http://www.ninepts.com/roc-ProductModels>
+<http://purl.org/ninepts/roc-ProductModels>
     rdf:type                    owl:Ontology ;
     owl:versionInfo             "1.0" ;
-    owl:imports                 <http://www.ninepts.com/roc-BusinessEntities> . 
+    owl:imports                 <http://purl.org/ninepts/roc-BusinessEntities> . 
 
 
 # ===================================================================
@@ -19,7 +19,7 @@
 
 # Belay Devices
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondATC>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondATC>
     rdf:type                    owl:NamedIndividual, roc:TubularDevice, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond ATC"@en ;
     gr:description              "Built to handle ropes ranging in diameter from 7.7mm to 11mm, this simple but functional device handles belaying and rappelling with kink-free ease."@en;
@@ -32,7 +32,7 @@
                                 ] ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondATCGuide>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondATCGuide>
     rdf:type                    owl:NamedIndividual, roc:TubularDevice, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond ATC Guide"@en ;
     gr:description              "The ATC Guide allows for a standard belay as well as belaying one or two climbers off anchors. Black Diamond upgraded it with machined windows for a lighter weight, and the larger auto-block release accepts smaller carabiners for a smoother and more dependable operation."@en;
@@ -45,7 +45,7 @@
                                 ] ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#PetzlGriGri2>
+<http://purl.org/ninepts/roc-ProductModels#PetzlGriGri2>
     rdf:type                    owl:NamedIndividual, roc:AutoBrakingDevice, gr:ProductOrServiceModel ;
     gr:name                     "Petzl GRIGRI 2"@en ;
     gr:description              "The compact and lightweight GRIGRI 2 Belay Device with assisted braking delivers excellent control for top-rope climbing and lead climbing."@en;
@@ -58,7 +58,7 @@
                                 ] ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#PetzlVerso>
+<http://purl.org/ninepts/roc-ProductModels#PetzlVerso>
     rdf:type                    owl:NamedIndividual, roc:TubularDevice, gr:ProductOrServiceModel ;
     gr:name                     "Petzl Verso"@en ;
     gr:description              "Petzl's lightest belay/rappel device with Adaptive Rope Control technology."@en;
@@ -84,7 +84,7 @@
 
 # Harnesses
 
-<http://www.ninepts.com/roc-ProductModels#EdelridJayneIIClimbingHarness-XS>
+<http://purl.org/ninepts/roc-ProductModels#EdelridJayneIIClimbingHarness-XS>
     rdf:type                    owl:NamedIndividual, roc:Harness, gr:ProductOrServiceModel ;
     gr:name                     "Edelrid Jayne II Climbing Harness - XS"@en ;
     gr:description              "A great all-arounder, this women's harness lets you spend the summer trad climbing, and take on weekend mountaineering adventures or ice climbing."@en;
@@ -99,7 +99,7 @@
     roc:hasSize                 roc:XS ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#EdelridJayneIIClimbingHarness-S>
+<http://purl.org/ninepts/roc-ProductModels#EdelridJayneIIClimbingHarness-S>
     rdf:type                    owl:NamedIndividual, roc:Harness, gr:ProductOrServiceModel ;
     gr:name                     "Edelrid Jayne II Climbing Harness - S"@en ;
     gr:description              "A great all-arounder, this women's harness lets you spend the summer trad climbing, and take on weekend mountaineering adventures or ice climbing."@en;
@@ -114,7 +114,7 @@
     roc:hasSize                 roc:S ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#EdelridJayneIIClimbingHarness-M>
+<http://purl.org/ninepts/roc-ProductModels#EdelridJayneIIClimbingHarness-M>
     rdf:type                    owl:NamedIndividual, roc:Harness, gr:ProductOrServiceModel ;
     gr:name                     "Edelrid Jayne II Climbing Harness - M"@en ;
     gr:description              "A great all-arounder, this women's harness lets you spend the summer trad climbing, and take on weekend mountaineering adventures or ice climbing."@en;
@@ -129,7 +129,7 @@
     roc:hasSize                 roc:M ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#EdelridJayneIIClimbingHarness-L>
+<http://purl.org/ninepts/roc-ProductModels#EdelridJayneIIClimbingHarness-L>
     rdf:type                    owl:NamedIndividual, roc:Harness, gr:ProductOrServiceModel ;
     gr:name                     "Edelrid Jayne II Climbing Harness - L"@en ;
     gr:description              "A great all-arounder, this women's harness lets you spend the summer trad climbing, and take on weekend mountaineering adventures or ice climbing."@en;
@@ -147,7 +147,7 @@
 
 # Other 
 
-<http://www.ninepts.com/roc-ProductModels#MetoliusPas22PersonalAnchorSystem>
+<http://purl.org/ninepts/roc-ProductModels#MetoliusPas22PersonalAnchorSystem>
     rdf:type                    owl:NamedIndividual, roc:PersonalAnchorSystem, gr:ProductOrServiceModel ;
     gr:name                     "Metolius PAS 22 Personal Anchor System"@en ;
     skos:altLabel				"Metolius PAS"@en ;
@@ -167,7 +167,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               true .
 
-<http://www.ninepts.com/roc-ProductModels#MetoliusAdjustableGearSling>
+<http://purl.org/ninepts/roc-ProductModels#MetoliusAdjustableGearSling>
     rdf:type                    owl:NamedIndividual, roc:MiscWorn, gr:ProductOrServiceModel ;
     gr:name                     "Metolius Adjustable Gear Sling"@en ;
     gr:description              "Long multi-pitch routes often require more racking options than the four loops on your harness. Distribute the weight and stay organized and comfortable with the Metolius Adjustable Gear Sling. "@en;
@@ -182,7 +182,7 @@
 
 # Protection
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondCamalotC3MicroCam0>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondCamalotC3MicroCam0>
     rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Camalot C3 Micro Cam, #0"@en ;
     gr:description              "The new Camalot C3s are designed to offer protection in truly thin areas. With 30% narrower head widths than any other three- or four-cam units on the market, they'll fit in small pin scars, finger pockets, and blown out holes."@en;
@@ -195,7 +195,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondCamalotC3MicroCam1>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondCamalotC3MicroCam1>
     rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Camalot C3 Micro Cam, #1"@en ;
     gr:description              "The new Camalot C3s are designed to offer protection in truly thin areas. With 30% narrower head widths than any other three- or four-cam units on the market, they'll fit in small pin scars, finger pockets, and blown out holes."@en;
@@ -208,7 +208,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondCamalotC3MicroCam2>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondCamalotC3MicroCam2>
     rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Camalot C3 Micro Cam, #2"@en ;
     gr:description              "The new Camalot C3s are designed to offer protection in truly thin areas. With 30% narrower head widths than any other three- or four-cam units on the market, they'll fit in small pin scars, finger pockets, and blown out holes."@en;
@@ -221,7 +221,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondCamalotC4CamPoint4>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondCamalotC4CamPoint4>
     rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Camalot C4 Cam, 0.4"@en ;
     gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
@@ -234,7 +234,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondCamalotC4CamPoint5>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondCamalotC4CamPoint5>
     rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Camalot C4 Cam, 0.5"@en ;
     gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
@@ -247,7 +247,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondCamalotC4CamPoint75>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondCamalotC4CamPoint75>
     rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Camalot C4 Cam, 0.75"@en ;
     gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
@@ -260,7 +260,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondCamalotC4Cam1>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondCamalotC4Cam1>
     rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Camalot C4 Cam, 1"@en ;
     gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
@@ -273,7 +273,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondCamalotC4Cam2>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondCamalotC4Cam2>
     rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Camalot C4 Cam, 2"@en ;
     gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
@@ -286,7 +286,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondCamalotC4Cam3>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondCamalotC4Cam3>
     rdf:type                    owl:NamedIndividual, roc:ActiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Camalot C4 Cam, 3"@en ;
     gr:description              "Black Diamond Camalot C4 cams utilize a double-axle design to retract the cam lobes, giving them a larger expansion range than traditional single-axle cams."@en;
@@ -299,7 +299,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondStopperSet1to13>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondStopperSet1to13>
     rdf:type                    owl:NamedIndividual, roc:PassiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Stopper Set 1-13"@en ;
     gr:description              "Black Diamond Stoppers are an essential for every trad rack, designed with a transverse taper that permits sideways placements in flares and shallow seams. Anodized by size, they`re quickly identifiable and rounded edges make for easy removal. Each Stopper is equipped with a durable, galvanized steel cable."@en;
@@ -312,7 +312,7 @@
     gr:hasManufacturer          roc-be:BlackDiamond ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#CampUsaTriCamPoint25>
+<http://purl.org/ninepts/roc-ProductModels#CampUsaTriCamPoint25>
     rdf:type                    owl:NamedIndividual, roc:PassiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "C.A.M.P. USA Tri-Cam 0.25"@en ;
     gr:description              "These wondrous pieces of pro can be used either as cams or nuts and often work where nothing else fi ts. Tricams are ideal in horizontal cracks, pockets, and shallow vertical cracks."@en;
@@ -325,7 +325,7 @@
     gr:hasManufacturer          roc-be:Camp ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#CampUsaTriCamPoint5>
+<http://purl.org/ninepts/roc-ProductModels#CampUsaTriCamPoint5>
     rdf:type                    owl:NamedIndividual, roc:PassiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "C.A.M.P. USA Tri-Cam 0.5"@en ;
     gr:description              "These wondrous pieces of pro can be used either as cams or nuts and often work where nothing else fi ts. Tricams are ideal in horizontal cracks, pockets, and shallow vertical cracks."@en;
@@ -338,7 +338,7 @@
     gr:hasManufacturer          roc-be:Camp ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#CampUsaTriCam1>
+<http://purl.org/ninepts/roc-ProductModels#CampUsaTriCam1>
     rdf:type                    owl:NamedIndividual, roc:PassiveProtection, gr:ProductOrServiceModel ;
     gr:name                     "C.A.M.P. USA Tri-Cam 1"@en ;
     gr:description              "These wondrous pieces of pro can be used either as cams or nuts and often work where nothing else fi ts. Tricams are ideal in horizontal cracks, pockets, and shallow vertical cracks."@en;
@@ -354,7 +354,7 @@
 
 # Ropes
 
-<http://www.ninepts.com/roc-ProductModels#MammutInfinityProtectSingleRope>
+<http://purl.org/ninepts/roc-ProductModels#MammutInfinityProtectSingleRope>
     rdf:type                    owl:NamedIndividual, roc:Rope, gr:ProductOrServiceModel ;
     gr:name                     "Mammut Infinity Protect Single Rope"@en ;
     gr:description              "The Mammut Infinity Protect 9.5mm x 70m Single Rope balances small diameter, low weight and high performance for sport climbing and multipitch trad routes."@en;
@@ -372,7 +372,7 @@
     gr:hasManufacturer          roc-be:Mammut ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#SterlingEvoltuionVelocity60m>
+<http://purl.org/ninepts/roc-ProductModels#SterlingEvoltuionVelocity60m>
     rdf:type                    owl:NamedIndividual, roc:Rope, gr:ProductOrServiceModel ;
     gr:name                     "Sterling Evolution Velocity 60M"@en ;
     gr:description              "This rope has it all and is our most popular of the Evolution series. Just the right amount of stiffness, so your rope doesn't flop during critical clips and its silky smooth sheath withstands abrasion and slides effortlessly to reduce rope drag."@en;
@@ -390,7 +390,7 @@
     gr:hasManufacturer          roc-be:Sterling ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#SterlingEvoltuionVelocity70m>
+<http://purl.org/ninepts/roc-ProductModels#SterlingEvoltuionVelocity70m>
     rdf:type                    owl:NamedIndividual, roc:Rope, gr:ProductOrServiceModel ;
     gr:name                     "Sterling Evolution Velocity 70M"@en ;
     gr:description              "This rope has it all and is our most popular of the Evolution series. Just the right amount of stiffness, so your rope doesn't flop during critical clips and its silky smooth sheath withstands abrasion and slides effortlessly to reduce rope drag."@en;
@@ -411,7 +411,7 @@
 
 # Runners
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondNylonRunner30>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondNylonRunner30>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Nylon 18mm x 30cm Runner"@en ;
     gr:description              "Versatile sewn runners for building anchors, slinging natural features and extending placements on wandering routes, Black Diamond Nylon Runners offer durable and classic functionality. Each size is also color-coded for quick and easy identification on your harness."@en;
@@ -430,7 +430,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               false .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondNylonRunner60>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondNylonRunner60>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Nylon 18mm x 60cm Runner"@en ;
     gr:description              "Versatile sewn runners for building anchors, slinging natural features and extending placements on wandering routes, Black Diamond Nylon Runners offer durable and classic functionality. Each size is also color-coded for quick and easy identification on your harness."@en;
@@ -449,7 +449,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               false .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondNylonRunner120>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondNylonRunner120>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Nylon 18mm x 120cm Runner"@en ;
     gr:description              "Versatile sewn runners for building anchors, slinging natural features and extending placements on wandering routes, Black Diamond Nylon Runners offer durable and classic functionality. Each size is also color-coded for quick and easy identification on your harness."@en;
@@ -468,7 +468,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               false .
 
-<http://www.ninepts.com/roc-ProductModels#BlackDiamondNylonRunner240>
+<http://purl.org/ninepts/roc-ProductModels#BlackDiamondNylonRunner240>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Black Diamond Nylon 18mm x 240cm Runner"@en ;
     gr:description              "Versatile sewn runners for building anchors, slinging natural features and extending placements on wandering routes, Black Diamond Nylon Runners offer durable and classic functionality. Each size is also color-coded for quick and easy identification on your harness."@en;
@@ -487,7 +487,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               false .
 
-<http://www.ninepts.com/roc-ProductModels#MammutDyneemaContactSling60>
+<http://purl.org/ninepts/roc-ProductModels#MammutDyneemaContactSling60>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Mammut Dyneema Contact 8mm x 60cm"@en ;
     gr:description              "The Mammut 8mm Contact Dyneema Slingsare the latest generation of the unbeatable Mammut contact slings: A very strong Dyneema webbing combined with the innovative Contact stitching technique ensures optimum handing, even in the seam area of these lightweight, high-end slings."@en;
@@ -506,7 +506,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               true .
 
-<http://www.ninepts.com/roc-ProductModels#MammutDyneemaContactSling120>
+<http://purl.org/ninepts/roc-ProductModels#MammutDyneemaContactSling120>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Mammut Dyneema Contact 8mm x 120cm"@en ;
     gr:description              "The Mammut 8mm Contact Dyneema Slingsare the latest generation of the unbeatable Mammut contact slings: A very strong Dyneema webbing combined with the innovative Contact stitching technique ensures optimum handing, even in the seam area of these lightweight, high-end slings."@en;
@@ -525,7 +525,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               true .
 
-<http://www.ninepts.com/roc-ProductModels#MammutTubularSling60>
+<http://purl.org/ninepts/roc-ProductModels#MammutTubularSling60>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Mammut Tubular Sling 16mm x 60cm"@en ;
     gr:description              "The Tubular Sling 16.0 is a classic in Mammut's collection for climbers and alpinists alike."@en;
@@ -544,7 +544,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               false .
 
-<http://www.ninepts.com/roc-ProductModels#MammutTubularSling120>
+<http://purl.org/ninepts/roc-ProductModels#MammutTubularSling120>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Mammut Tubular Sling 16mm x 120cm"@en ;
     gr:description              "The Tubular Sling 16.0 is a classic in Mammut's collection for climbers and alpinists alike."@en;
@@ -565,7 +565,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               false .
 
-<http://www.ninepts.com/roc-ProductModels#SterlingDyneemaSewnRunner10>
+<http://purl.org/ninepts/roc-ProductModels#SterlingDyneemaSewnRunner10>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Serling Dyneema Sewn Runner 10 inch"@en ;
     gr:description              "These lightweight slings features a thin yet super-strong construction that makes them ideal for demanding alpine climbs and the rigors of trad climbing. The light, moisture-resistant material keeps you safe, whether you’re building anchors or extending gear placements."@en;
@@ -584,7 +584,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               true .
 
-<http://www.ninepts.com/roc-ProductModels#SterlingDyneemaSewnRunner24>
+<http://purl.org/ninepts/roc-ProductModels#SterlingDyneemaSewnRunner24>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Serling Dyneema Sewn Runner 24 inch"@en ;
     gr:description              "These lightweight slings features a thin yet super-strong construction that makes them ideal for demanding alpine climbs and the rigors of trad climbing. The light, moisture-resistant material keeps you safe, whether you’re building anchors or extending gear placements."@en;
@@ -603,7 +603,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               true .
 
-<http://www.ninepts.com/roc-ProductModels#SterlingDyneemaSewnRunner30>
+<http://purl.org/ninepts/roc-ProductModels#SterlingDyneemaSewnRunner30>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Serling Dyneema Sewn Runner 30 inch"@en ;
     gr:description              "These lightweight slings features a thin yet super-strong construction that makes them ideal for demanding alpine climbs and the rigors of trad climbing. The light, moisture-resistant material keeps you safe, whether you’re building anchors or extending gear placements."@en;
@@ -622,7 +622,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               true .
 
-<http://www.ninepts.com/roc-ProductModels#SterlingNylonSewnRunner30>
+<http://purl.org/ninepts/roc-ProductModels#SterlingNylonSewnRunner30>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Serling Nylon Sewn Runner 30 inch"@en ;
     gr:description              "Pick up the Sterling 17mm x 30in Nylon Sewn Runners for building anchors, extending gear placements, or racking gear."@en;
@@ -641,7 +641,7 @@
     roc:uiaaApproved            true ;
     roc:synthetic               false .
 
-<http://www.ninepts.com/roc-ProductModels#SterlingNylonSewnRunner48>
+<http://purl.org/ninepts/roc-ProductModels#SterlingNylonSewnRunner48>
     rdf:type                    owl:NamedIndividual, roc:Runner, gr:ProductOrServiceModel ;
     gr:name                     "Serling Nylon Sewn Runner 48 inch"@en ;
     gr:description              "Pick up the Sterling 17mm x 48in Nylon Sewn Runners for building anchors, extending gear placements, or racking gear."@en;
@@ -667,7 +667,7 @@
 
 # Quickdraws
 
-<http://www.ninepts.com/roc-ProductModels#DMMShadowKeylockQuickdraw>
+<http://purl.org/ninepts/roc-ProductModels#DMMShadowKeylockQuickdraw>
     rdf:type                    owl:NamedIndividual, roc:Quickdraw, gr:ProductOrServiceModel ;
     gr:name                     "DMM Shadow Keylock Quickdraw"@en ;
     gr:description              "The bent gate version of the classic sport climbing biner, the Shadow, forms the rope clipping end of the quickdraw. The inside of the biner has a deep basket to ensure that the rope is guided towards the spine for added safety. "@en;
@@ -680,7 +680,7 @@
     gr:hasManufacturer          roc-be:DMM ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#GrivelAlphaQuickEasyQuickdraw>
+<http://purl.org/ninepts/roc-ProductModels#GrivelAlphaQuickEasyQuickdraw>
     rdf:type                    owl:NamedIndividual, roc:Quickdraw, gr:ProductOrServiceModel ;
     gr:name                     "Grivel Alpha Quick Easy Quickdraw"@en ;
     gr:description              "The Grivel Alpha Easy quickdraw combines lightweight carabiners with a semirigid sling for fast ascents of challenging sport climbs."@en;
@@ -693,7 +693,7 @@
     gr:hasManufacturer          roc-be:Grivel ;
     roc:uiaaApproved            true .
 
-<http://www.ninepts.com/roc-ProductModels#TrangoPhaseAlpineQuickdraw>
+<http://purl.org/ninepts/roc-ProductModels#TrangoPhaseAlpineQuickdraw>
     rdf:type                    owl:NamedIndividual, roc:Quickdraw, gr:ProductOrServiceModel ;
     gr:name                     "Trango Phase Alpine Quickdraw"@en ;
     gr:description              "With 2 lightweight wiregate carabiners and a low-bulk sling, the Trango Phase Alpine Quickdraw is a great choice for your alpine multipitch climbs."@en;

@@ -1,25 +1,25 @@
-@prefix roc-off:	<http://www.ninepts.com/roc-Offerings#> .
-@prefix roc-inv:	<http://www.ninepts.com/roc-Inventory#> .
-@prefix roc:		<http://www.ninepts.com/roc#> .
+@prefix roc-off:	<http://purl.org/ninepts/roc-Offerings#> .
+@prefix roc-inv:	<http://purl.org/ninepts/roc-Inventory#> .
+@prefix roc:		<http://purl.org/ninepts/roc#> .
 @prefix gr:         <http://purl.org/goodrelations/v1#> .
 @prefix owl:    	<http://www.w3.org/2002/07/owl#> .
 @prefix rdf:    	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   	<http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://www.ninepts.com/roc-Offerings>
+<http://purl.org/ninepts/roc-Offerings>
 	rdf:type				owl:Ontology ;
-	rdfs:label				"ROC Offerings"@en ;
+	gr:name   				"ROC Offerings"@en ;
 	owl:versionInfo			"1.0" ;
 	owl:imports 			<http://purl.org/goodrelations/v1> ; 
-    owl:imports				<http://www.ninepts.com/rocInventory> .
+    owl:imports				<http://purl.org/ninepts/rocInventory> .
 
 # ===================================================================
 # Belay Devices
 # ===================================================================
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondATC-denim>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondATC-denim>
 	rdf:type 					owl:NamedIndividual, gr:Offering ;
-	rdfs:label					"Black Diamond ATC - Denim"@en ;
+	gr:name   					"Black Diamond ATC - Denim"@en ;
 	gr:includes       			roc-inv:BlackDiamondATC-denim ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -27,9 +27,9 @@
                                     gr:hasCurrencyValue     "17.95"^^xsd:float
                                 ] ;	
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondATC-ruby>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondATC-ruby>
 	rdf:type 					owl:NamedIndividual, gr:Offering ;
-	rdfs:label					"Black Diamond ATC - Ruby"@en ;
+	gr:name   					"Black Diamond ATC - Ruby"@en ;
 	gr:includes       			roc-inv:BlackDiamondATC-ruby ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -37,9 +37,9 @@
                                     gr:hasCurrencyValue     "17.95"^^xsd:float
                                 ] ;		
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondATC-platinum>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondATC-platinum>
 	rdf:type 					owl:NamedIndividual, gr:Offering ;
-	rdfs:label					"Black Diamond ATC - Platinum"@en ;
+	gr:name   					"Black Diamond ATC - Platinum"@en ;
 	gr:includes       			roc-inv:BlackDiamondATC-platinum ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -47,9 +47,9 @@
                                     gr:hasCurrencyValue     "17.95"^^xsd:float
                                 ] ;		
 
-<http://www.ninepts.com/roc-Offeringsn#BlackDiamondATCGuide-black>
+<http://purl.org/ninepts/roc-Offeringsn#BlackDiamondATCGuide-black>
 	rdf:type 					owl:NamedIndividual, gr:Offering ;
-	rdfs:label					"Black Diamond ATC Guide - Black"@en ;
+	gr:name   					"Black Diamond ATC Guide - Black"@en ;
 	gr:includes       			roc-inv:BlackDiamondATCGuide-black ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -57,9 +57,9 @@
                                     gr:hasCurrencyValue     "29.95"^^xsd:float 
                                 ] ;	
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondATCGuide-green>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondATCGuide-green>
 	rdf:type 					owl:NamedIndividual, gr:Offering ;
-	rdfs:label					"Black Diamond ATC Guide - Green"@en ;
+	gr:name   					"Black Diamond ATC Guide - Green"@en ;
 	gr:includes       			roc-inv:BlackDiamondATCGuide-green ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -67,9 +67,9 @@
                                     gr:hasCurrencyValue     "29.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#PetzlGriGri2-grey>
+<http://purl.org/ninepts/roc-Offerings#PetzlGriGri2-grey>
 	rdf:type 					owl:NamedIndividual, gr:Offering ;
-	rdfs:label					"Petzl GRIGRI 2 - Grey"@en ;
+	gr:name   					"Petzl GRIGRI 2 - Grey"@en ;
 	gr:includes       			roc-inv:PetzlGriGri2-grey ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -77,9 +77,9 @@
                                     gr:hasCurrencyValue     "99.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#PetzlGriGri2-turquoise>
+<http://purl.org/ninepts/roc-Offerings#PetzlGriGri2-turquoise>
 	rdf:type 					owl:NamedIndividual, gr:Offering ;
-	rdfs:label					"Petzl GRIGRI 2 - Turquoise"@en ;
+	gr:name   					"Petzl GRIGRI 2 - Turquoise"@en ;
 	gr:includes       			roc-inv:PetzlGriGri2-turquoise ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -87,9 +87,9 @@
                                     gr:hasCurrencyValue     "99.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#PetzlGriGri2-yellow>
+<http://purl.org/ninepts/roc-Offerings#PetzlGriGri2-yellow>
 	rdf:type 					owl:NamedIndividual, gr:Offering ;
-	rdfs:label					"Petzl GRIGRI 2 - Yellow"@en ;
+	gr:name   					"Petzl GRIGRI 2 - Yellow"@en ;
 	gr:includes       			roc-inv:PetzlGriGri2-yellow ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -130,9 +130,9 @@
 # Other
 # ===================================================================
 
-<http://www.ninepts.com/roc-Offerings#MetoliusPas22PersonalAnchorSystem>
+<http://purl.org/ninepts/roc-Offerings#MetoliusPas22PersonalAnchorSystem>
 	rdf:type 					owl:NamedIndividual, gr:Offering ;
-	rdfs:label					"Metolius PAS 22 Personal Anchor System"@en ;
+	gr:name   					"Metolius PAS 22 Personal Anchor System"@en ;
 	gr:includes       			roc-inv:MetoliusPas22PersonalAnchorSystem ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -145,9 +145,9 @@
 # Protection
 # ===================================================================
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondCamalotC4CamPoint4>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondCamalotC4CamPoint4>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 0.4"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 0.4"@en ;
     gr:includes       			roc-inv:BlackDiamondCamalotC4CamPoint4 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -155,9 +155,9 @@
                                     gr:hasCurrencyValue     "64.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondCamalotC4CamPoint5>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondCamalotC4CamPoint5>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 0.5"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 0.5"@en ;
     gr:includes       			roc-inv:BlackDiamondCamalotC4CamPoint5 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -165,9 +165,9 @@
                                     gr:hasCurrencyValue     "64.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondCamalotC4CamPoint75>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondCamalotC4CamPoint75>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 0.75"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 0.75"@en ;
     gr:includes       			roc-inv:BlackDiamondCamalotC4CamPoint75 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -175,9 +175,9 @@
                                     gr:hasCurrencyValue     "64.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondCamalotC4Cam1>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondCamalotC4Cam1>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 1"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 1"@en ;
     gr:includes       			roc-inv:BlackDiamondCamalotC4Cam1 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -185,9 +185,9 @@
                                     gr:hasCurrencyValue     "69.95"^^xsd:float 
                                 ] ; 
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondCamalotC4Cam2>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondCamalotC4Cam2>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 2"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 2"@en ;
     gr:includes       			roc-inv:BlackDiamondCamalotC4Cam2 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -195,9 +195,9 @@
                                     gr:hasCurrencyValue     "74.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondCamalotC4Cam3>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondCamalotC4Cam3>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 3"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 3"@en ;
     gr:includes       			roc-inv:BlackDiamondCamalotC4Cam3 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -205,9 +205,9 @@
                                     gr:hasCurrencyValue     "74.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondStopperSet1to13>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondStopperSet1to13>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Stopper Set 1-13"@en ;
+    gr:name                     "Black Diamond Stopper Set 1-13"@en ;
     gr:includes       			roc-inv:BlackDiamondStopperSet1to13 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -219,9 +219,9 @@
 # Ropes
 # ===================================================================
 
-<http://www.ninepts.com/roc-Offerings#SterlingEvoltuionVelocity60m-iceBlue>
+<http://purl.org/ninepts/roc-Offerings#SterlingEvoltuionVelocity60m-iceBlue>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Sterling Evolution Velocity 60M - Ice Blue"@en ;
+    gr:name                     "Sterling Evolution Velocity 60M - Ice Blue"@en ;
     gr:includes       			roc-inv:SterlingEvoltuionVelocity60m-iceBlue ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -229,9 +229,9 @@
                                     gr:hasCurrencyValue     "204.00"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#SterlingEvoltuionVelocity60m-neonGreen>
+<http://purl.org/ninepts/roc-Offerings#SterlingEvoltuionVelocity60m-neonGreen>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Sterling Evolution Velocity 60M - Neon Green"@en ;
+    gr:name                     "Sterling Evolution Velocity 60M - Neon Green"@en ;
     gr:includes       			roc-inv:SterlingEvoltuionVelocity60m-neonGreen ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -239,9 +239,9 @@
                                     gr:hasCurrencyValue     "204.00"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#SterlingEvoltuionVelocity60m-purple>
+<http://purl.org/ninepts/roc-Offerings#SterlingEvoltuionVelocity60m-purple>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Sterling Evolution Velocity 60M - Purple"@en ;
+    gr:name                     "Sterling Evolution Velocity 60M - Purple"@en ;
     gr:includes       			roc-inv:SterlingEvoltuionVelocity60m-purple ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -249,9 +249,9 @@
                                     gr:hasCurrencyValue     "204.00"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#SterlingEvoltuionVelocity60m-turquoise>
+<http://purl.org/ninepts/roc-Offerings#SterlingEvoltuionVelocity60m-turquoise>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Sterling Evolution Velocity 60M - Turquoise"@en ;
+    gr:name                     "Sterling Evolution Velocity 60M - Turquoise"@en ;
     gr:includes       			roc-inv:SterlingEvoltuionVelocity60m-turquoise ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -259,9 +259,9 @@
                                     gr:hasCurrencyValue     "204.00"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#SterlingEvoltuionVelocity70m-iceBlue>
+<http://purl.org/ninepts/roc-Offerings#SterlingEvoltuionVelocity70m-iceBlue>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Sterling Evolution Velocity 70M - Ice Blue"@en ;
+    gr:name                     "Sterling Evolution Velocity 70M - Ice Blue"@en ;
     gr:includes       			roc-inv:SterlingEvoltuionVelocity70m-iceBlue ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -269,9 +269,9 @@
                                     gr:hasCurrencyValue     "238.05"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#SterlingEvoltuionVelocity70m-neonGreen>
+<http://purl.org/ninepts/roc-Offerings#SterlingEvoltuionVelocity70m-neonGreen>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Sterling Evolution Velocity 70M - Neon Green"@en ;
+    gr:name                     "Sterling Evolution Velocity 70M - Neon Green"@en ;
     gr:includes       			roc-inv:SterlingEvoltuionVelocity70m-neonGreen ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -279,9 +279,9 @@
                                     gr:hasCurrencyValue     "238.05"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#SterlingEvoltuionVelocity70m-purple>
+<http://purl.org/ninepts/roc-Offerings#SterlingEvoltuionVelocity70m-purple>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Sterling Evolution Velocity 70M - Purple"@en ;
+    gr:name                     "Sterling Evolution Velocity 70M - Purple"@en ;
     gr:includes       			roc-inv:SterlingEvoltuionVelocity70m-purple ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -289,9 +289,9 @@
                                     gr:hasCurrencyValue     "238.05"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#SterlingEvoltuionVelocity70m-turquoise>
+<http://purl.org/ninepts/roc-Offerings#SterlingEvoltuionVelocity70m-turquoise>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Sterling Evolution Velocity 70M - Turquoise"@en ;
+    gr:name                     "Sterling Evolution Velocity 70M - Turquoise"@en ;
     gr:includes       			roc-inv:SterlingEvoltuionVelocity70m-turquoise ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -304,9 +304,9 @@
 # Runners
 # ===================================================================
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondNylonRunner30>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondNylonRunner30>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Nylon 18mm x 30cm Runner"@en ;
+    gr:name                     "Black Diamond Nylon 18mm x 30cm Runner"@en ;
     gr:includes       			roc-inv:BlackDiamondNylonRunner30 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -314,9 +314,9 @@
                                     gr:hasCurrencyValue     "3.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondNylonRunner60>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondNylonRunner60>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Nylon 18mm x 60cm Runner"@en ;
+    gr:name                     "Black Diamond Nylon 18mm x 60cm Runner"@en ;
     gr:includes       			roc-inv:BlackDiamondNylonRunner60 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -324,9 +324,9 @@
                                     gr:hasCurrencyValue     "4.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondNylonRunner120>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondNylonRunner120>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Nylon 18mm x 120cm Runner"@en ;
+    gr:name                     "Black Diamond Nylon 18mm x 120cm Runner"@en ;
     gr:includes       			roc-inv:BlackDiamondNylonRunner120 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;
@@ -334,9 +334,9 @@
                                     gr:hasCurrencyValue     "8.95"^^xsd:float 
                                 ] ;
 
-<http://www.ninepts.com/roc-Offerings#BlackDiamondNylonRunner240>
+<http://purl.org/ninepts/roc-Offerings#BlackDiamondNylonRunner240>
     rdf:type                    owl:NamedIndividual, gr:Offering ;
-    rdfs:label                  "Black Diamond Nylon 18mm x 240cm Runner"@en ;
+    gr:name                     "Black Diamond Nylon 18mm x 240cm Runner"@en ;
     gr:includes        			roc-inv:BlackDiamondNylonRunner240 ;
     gr:hasPriceSpecification    [
                                     rdf:type                gr:UnitPriceSpecification ;

@@ -1,26 +1,48 @@
-@prefix roc-inv:	<http://www.ninepts.com/roc-Inventory#> .
-@prefix roc:		<http://www.ninepts.com/roc#> .
-@prefix roc-pm:			<http://www.ninepts.com/rocProducts#> .
+@prefix roc-inv:	<http://purl.org/ninepts/roc-Inventory#> .
+@prefix roc:		<http://purl.org/ninepts/roc#> .
+@prefix roc-pm:		<http://purl.org/ninepts/rocProducts#> .
 @prefix gr:         <http://purl.org/goodrelations/v1#> .
 @prefix owl:    	<http://www.w3.org/2002/07/owl#> .
 @prefix rdf:    	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:			<http://schema.org/> .
 
-<http://www.ninepts.com/roc-Inventory>
+<http://purl.org/ninepts/roc-Inventory>
 	rdf:type				owl:Ontology ;
-	rdfs:label				"Gym Inventory"@en ;
+	gr:name   				"My Gym Inventory"@en ;
 	owl:versionInfo			"1.0" ;
 	owl:imports 			<http://purl.org/goodrelations/v1> ; 
-    owl:imports				<http://www.ninepts.com/rocProducts> .
+    owl:imports				<http://purl.org/ninepts/rocProducts> .
+
+<http://purl.org/ninepts/roc-Inventory#MyGym>
+	rdf:type				gr:BussinessEntity ;
+	gr:name   				"My Gym"@en ;
+	gr:description			"My Gym retail location example"@en ;
+	gr:hasPOS				[
+								rdf:type		gr:Location ;
+								gr:hasOpeningHoursSpecification [
+													rdf:type			gr:OpeningHoursSpecification
+													gr:opens 			"10:00:00"^^xsd:time ;
+													gr:closes			"22:00:00"^^xsd:time ;
+													gr:hasOpeningHoursDayOfWeek		gr:Monday, gr:Tuesday, gr:Wednesday, gr:Thursday, gr:Friday, gr:Saturday, gr:Sunday
+												] ;
+								s:address		[
+													rdf:type			s:PostalAddress ;
+													s:streetAddress		"123 Any Rd" ;
+													s:postalCode		"12345" ;
+													s:addressLocality	"State, USA"
+												] ;
+								s:telephone		"+1-123-456-7890"
+							] .
 
 
 # ===================================================================
 # Belay Devices
 # ===================================================================
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondATC-denim>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondATC-denim>
 	rdf:type 					owl:NamedIndividual, gr:SomeItems, roc:TubularDevice ;
-	rdfs:label					"Black Diamond ATC - Denim"@en ;
+	gr:name   					"Black Diamond ATC - Denim"@en ;
 	gr:hasMakeAndModel			roc-pm:BlackDiamondATC ;
 	gr:color					"denim" ;
 	gr:hasInventoryLevel		[
@@ -28,9 +50,9 @@
 									gr:hasValueFloat	"0"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondATC-ruby>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondATC-ruby>
 	rdf:type 					owl:NamedIndividual, gr:SomeItems, roc:TubularDevice ;
-	rdfs:label					"Black Diamond ATC - Ruby"@en ;
+	gr:name   					"Black Diamond ATC - Ruby"@en ;
 	gr:hasMakeAndModel			roc-pm:BlackDiamondATC ;
 	gr:color					"ruby" ;
 	gr:hasInventoryLevel		[
@@ -38,9 +60,9 @@
 									gr:hasValueFloat	"5"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondATC-platinum>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondATC-platinum>
 	rdf:type 					owl:NamedIndividual, gr:SomeItems, roc:TubularDevice ;
-	rdfs:label					"Black Diamond ATC - Platinum"@en ;
+	gr:name   					"Black Diamond ATC - Platinum"@en ;
 	gr:hasMakeAndModel			roc-pm:BlackDiamondATC ;
 	gr:color					"platinum" ;
 	gr:hasInventoryLevel		[
@@ -48,9 +70,9 @@
 									gr:hasValueFloat	"3"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventoryn#BlackDiamondATCGuide-black>
+<http://purl.org/ninepts/roc-Inventoryn#BlackDiamondATCGuide-black>
 	rdf:type 					owl:NamedIndividual, gr:SomeItems, roc:TubularDevice ;
-	rdfs:label					"Black Diamond ATC Guide - Black"@en ;
+	gr:name   					"Black Diamond ATC Guide - Black"@en ;
 	gr:hasMakeAndModel			roc-pm:BlackDiamondATCGuide ;
 	gr:color					"black" ;
 	gr:hasInventoryLevel		[
@@ -58,9 +80,9 @@
 									gr:hasValueFloat	"2"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondATCGuide-green>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondATCGuide-green>
 	rdf:type 					owl:NamedIndividual, gr:SomeItems, roc:TubularDevice ;
-	rdfs:label					"Black Diamond ATC Guide - Green"@en ;
+	gr:name   					"Black Diamond ATC Guide - Green"@en ;
 	gr:hasMakeAndModel			roc-pm:BlackDiamondATCGuide ;
 	gr:color					"green" ;
 	gr:hasInventoryLevel		[
@@ -68,9 +90,9 @@
 									gr:hasValueFloat	"4"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#PetzlGriGri2-grey>
+<http://purl.org/ninepts/roc-Inventory#PetzlGriGri2-grey>
 	rdf:type 					owl:NamedIndividual, gr:SomeItems, roc:AutoBrakingDevice ;
-	rdfs:label					"Petzl GRIGRI 2 - Grey"@en ;
+	gr:name   					"Petzl GRIGRI 2 - Grey"@en ;
 	gr:hasMakeAndModel			roc-pm:PetzlGriGri2 ;
 	gr:color					"grey" ;
 	gr:hasInventoryLevel		[
@@ -78,9 +100,9 @@
 									gr:hasValueFloat	"4"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#PetzlGriGri2-turquoise>
+<http://purl.org/ninepts/roc-Inventory#PetzlGriGri2-turquoise>
 	rdf:type 					owl:NamedIndividual, gr:SomeItems, roc:AutoBrakingDevice ;
-	rdfs:label					"Petzl GRIGRI 2 - Turquoise"@en ;
+	gr:name   					"Petzl GRIGRI 2 - Turquoise"@en ;
 	gr:hasMakeAndModel			roc-pm:PetzlGriGri2 ;
 	gr:color					"turquoise" ;
 	gr:hasInventoryLevel		[
@@ -88,9 +110,9 @@
 									gr:hasValueFloat	"4"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#PetzlGriGri2-yellow>
+<http://purl.org/ninepts/roc-Inventory#PetzlGriGri2-yellow>
 	rdf:type 					owl:NamedIndividual, gr:SomeItems, roc:AutoBrakingDevice ;
-	rdfs:label					"Petzl GRIGRI 2 - Yellow"@en ;
+	gr:name   					"Petzl GRIGRI 2 - Yellow"@en ;
 	gr:hasMakeAndModel			roc-pm:PetzlGriGri2 ;
 	gr:color					"yellow" ;
 	gr:hasInventoryLevel		[
@@ -131,9 +153,9 @@
 # Other
 # ===================================================================
 
-<http://www.ninepts.com/roc-Inventory#MetoliusPas22PersonalAnchorSystem>
+<http://purl.org/ninepts/roc-Inventory#MetoliusPas22PersonalAnchorSystem>
 	rdf:type 					owl:NamedIndividual, gr:SomeItems, roc:PersonalAnchorSystem ;
-	rdfs:label					"Metolius PAS 22 Personal Anchor System"@en ;
+	gr:name   					"Metolius PAS 22 Personal Anchor System"@en ;
 	gr:hasMakeAndModel			roc-pm:MetoliusPas22PersonalAnchorSystem ;
 	gr:color					"multi" ;
 	gr:hasInventoryLevel		[
@@ -146,9 +168,9 @@
 # Protection
 # ===================================================================
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondCamalotC4CamPoint4>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondCamalotC4CamPoint4>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:ActiveProtection ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 0.4"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 0.4"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondCamalotC4CamPoint4 ;
     gr:color                    "grey" ;
     gr:hasInventoryLevel		[
@@ -156,9 +178,9 @@
 									gr:hasValueFloat	"2"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondCamalotC4CamPoint5>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondCamalotC4CamPoint5>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:ActiveProtection ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 0.5"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 0.5"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondCamalotC4CamPoint5 ;
     gr:color                    "purple" ;
     gr:hasInventoryLevel		[
@@ -166,9 +188,9 @@
 									gr:hasValueFloat	"3"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondCamalotC4CamPoint75>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondCamalotC4CamPoint75>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:ActiveProtection ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 0.75"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 0.75"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondCamalotC4CamPoint75 ;
     gr:color					"green" ;
     gr:hasInventoryLevel		[
@@ -176,9 +198,9 @@
 									gr:hasValueFloat	"2"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondCamalotC4Cam1>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondCamalotC4Cam1>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:ActiveProtection ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 1"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 1"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondCamalotC4Cam1 ;
     gr:color                    "red" ;
     gr:hasInventoryLevel		[
@@ -186,9 +208,9 @@
 									gr:hasValueFloat	"2"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondCamalotC4Cam2>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondCamalotC4Cam2>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:ActiveProtection ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 2"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 2"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondCamalotC4Cam2 ;
     gr:color                    "yellow" ;
     gr:hasInventoryLevel		[
@@ -196,9 +218,9 @@
 									gr:hasValueFloat	"4"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondCamalotC4Cam3>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondCamalotC4Cam3>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:ActiveProtection ;
-    rdfs:label                  "Black Diamond Camalot C4 Cam, 3"@en ;
+    gr:name                     "Black Diamond Camalot C4 Cam, 3"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondCamalotC4Cam3 ;
     gr:color                    "blue" ;
     gr:hasInventoryLevel		[
@@ -206,9 +228,9 @@
 									gr:hasValueFloat	"1"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondStopperSet1to13>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondStopperSet1to13>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:PassiveProtection ;
-    rdfs:label                  "Black Diamond Stopper Set 1-13"@en ;
+    gr:name                     "Black Diamond Stopper Set 1-13"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondStopperSet1to13 ;
     gr:color					"multi" ;
     gr:hasInventoryLevel		[
@@ -221,9 +243,9 @@
 # Ropes
 # ===================================================================
 
-<http://www.ninepts.com/roc-Inventory#SterlingEvoltuionVelocity60m-iceBlue>
+<http://purl.org/ninepts/roc-Inventory#SterlingEvoltuionVelocity60m-iceBlue>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Rope ;
-    rdfs:label                  "Sterling Evolution Velocity 60M - Ice Blue"@en ;
+    gr:name                     "Sterling Evolution Velocity 60M - Ice Blue"@en ;
     gr:hasMakeAndModel			roc-pm:SterlingEvoltuionVelocity60m ;
     gr:color                    "ice blue" ;
     gr:hasInventoryLevel		[
@@ -231,9 +253,9 @@
 									gr:hasValueFloat	"2"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#SterlingEvoltuionVelocity60m-neonGreen>
+<http://purl.org/ninepts/roc-Inventory#SterlingEvoltuionVelocity60m-neonGreen>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Rope ;
-    rdfs:label                  "Sterling Evolution Velocity 60M - Neon Green"@en ;
+    gr:name                     "Sterling Evolution Velocity 60M - Neon Green"@en ;
     gr:hasMakeAndModel			roc-pm:SterlingEvoltuionVelocity60m ;
     gr:color                    "neon green" ;
     gr:hasInventoryLevel		[
@@ -241,9 +263,9 @@
 									gr:hasValueFloat	"0"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#SterlingEvoltuionVelocity60m-purple>
+<http://purl.org/ninepts/roc-Inventory#SterlingEvoltuionVelocity60m-purple>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Rope ;
-    rdfs:label                  "Sterling Evolution Velocity 60M - Purple"@en ;
+    gr:name                     "Sterling Evolution Velocity 60M - Purple"@en ;
     gr:hasMakeAndModel			roc-pm:SterlingEvoltuionVelocity60m ;
     gr:color                    "purple" ;
     gr:hasInventoryLevel		[
@@ -251,9 +273,9 @@
 									gr:hasValueFloat	"1"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#SterlingEvoltuionVelocity60m-turquoise>
+<http://purl.org/ninepts/roc-Inventory#SterlingEvoltuionVelocity60m-turquoise>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Rope ;
-    rdfs:label                  "Sterling Evolution Velocity 60M - Turquoise"@en ;
+    gr:name                     "Sterling Evolution Velocity 60M - Turquoise"@en ;
     gr:hasMakeAndModel			roc-pm:SterlingEvoltuionVelocity60m ;
     gr:color                    "turquoise" ;
     gr:hasInventoryLevel		[
@@ -261,9 +283,9 @@
 									gr:hasValueFloat	"0"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#SterlingEvoltuionVelocity70m-iceBlue>
+<http://purl.org/ninepts/roc-Inventory#SterlingEvoltuionVelocity70m-iceBlue>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Rope ;
-    rdfs:label                  "Sterling Evolution Velocity 70M - Ice Blue"@en ;
+    gr:name                     "Sterling Evolution Velocity 70M - Ice Blue"@en ;
     gr:hasMakeAndModel			roc-pm:SterlingEvoltuionVelocity70m ;
     gr:color                    "ice blue" ;
     gr:hasInventoryLevel		[
@@ -271,9 +293,9 @@
 									gr:hasValueFloat	"1"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#SterlingEvoltuionVelocity70m-neonGreen>
+<http://purl.org/ninepts/roc-Inventory#SterlingEvoltuionVelocity70m-neonGreen>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Rope ;
-    rdfs:label                  "Sterling Evolution Velocity 70M - Neon Green"@en ;
+    gr:name                     "Sterling Evolution Velocity 70M - Neon Green"@en ;
     gr:hasMakeAndModel			roc-pm:SterlingEvoltuionVelocity70m ;
     gr:color                    "neon green" ;
     gr:hasInventoryLevel		[
@@ -281,9 +303,9 @@
 									gr:hasValueFloat	"3"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#SterlingEvoltuionVelocity70m-purple>
+<http://purl.org/ninepts/roc-Inventory#SterlingEvoltuionVelocity70m-purple>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Rope ;
-    rdfs:label                  "Sterling Evolution Velocity 70M - Purple"@en ;
+    gr:name                     "Sterling Evolution Velocity 70M - Purple"@en ;
     gr:hasMakeAndModel			roc-pm:SterlingEvoltuionVelocity70m ;
     gr:color                    "purple" ;
     gr:hasInventoryLevel		[
@@ -291,9 +313,9 @@
 									gr:hasValueFloat	"2"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#SterlingEvoltuionVelocity70m-turquoise>
+<http://purl.org/ninepts/roc-Inventory#SterlingEvoltuionVelocity70m-turquoise>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Rope ;
-    rdfs:label                  "Sterling Evolution Velocity 70M - Turquoise"@en ;
+    gr:name                     "Sterling Evolution Velocity 70M - Turquoise"@en ;
     gr:hasMakeAndModel			roc-pm:SterlingEvoltuionVelocity70m ;
     gr:color                    "turquoise" ;
     gr:hasInventoryLevel		[
@@ -306,9 +328,9 @@
 # Runners
 # ===================================================================
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondNylonRunner30>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondNylonRunner30>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Runner ;
-    rdfs:label                  "Black Diamond Nylon 18mm x 30cm Runner"@en ;
+    gr:name                     "Black Diamond Nylon 18mm x 30cm Runner"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondNylonRunner30 ;
     gr:color                    "red" ;
     roc:inventoryLevel		gr:hasInventoryLevel		[
@@ -316,9 +338,9 @@
 									gr:hasValueFloat	"10"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondNylonRunner60>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondNylonRunner60>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Runner ;
-    rdfs:label                  "Black Diamond Nylon 18mm x 60cm Runner"@en ;
+    gr:name                     "Black Diamond Nylon 18mm x 60cm Runner"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondNylonRunner60 ;
     gr:color                    "yellow" ;
     gr:hasInventoryLevel		[
@@ -326,9 +348,9 @@
 									gr:hasValueFloat	"12"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondNylonRunner120>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondNylonRunner120>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Runner ;
-    rdfs:label                  "Black Diamond Nylon 18mm x 120cm Runner"@en ;
+    gr:name                     "Black Diamond Nylon 18mm x 120cm Runner"@en ;
     gr:hasMakeAndModel			roc-pm:BlackDiamondNylonRunner120 ;
     gr:color                    "blue" ;
     gr:hasInventoryLevel		[
@@ -336,9 +358,9 @@
 									gr:hasValueFloat	"14"^^xsd:float
 								] .
 
-<http://www.ninepts.com/roc-Inventory#BlackDiamondNylonRunner240>
+<http://purl.org/ninepts/roc-Inventory#BlackDiamondNylonRunner240>
     rdf:type                    owl:NamedIndividual, gr:SomeItems, roc:Runner ;
-    rdfs:label                  "Black Diamond Nylon 18mm x 240cm Runner"@en ;
+    gr:name                     "Black Diamond Nylon 18mm x 240cm Runner"@en ;
     gr:hasMakeAndModel 			roc:BlackDiamondNylonRunner240 ;
     gr:color                    "silver" ;
     gr:hasInventoryLevel		[
