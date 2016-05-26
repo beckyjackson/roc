@@ -11,7 +11,8 @@ integrated with GoodRelations, and to illustrate several concrete retail solutio
 enabled by the use of ontologies. The climbing gear ontology "ROC" was created as 
 a learning experience in knowledge engineering and ontology development.
 
-ROC is divided into a hierarchy of files, with the final three being peers of each other. Levels 2 through 4 only contain instances of individuals.
+ROC is divided into a hierarchy of files, with the final three being peers of each 
+other. Levels 2 through 4 only contain instances of individuals.
 
 1. roc.ttl: defines the unique properties and classes for the climbing domain
 2. roc-BusinessEntities.ttl: contains the various manufacturers
